@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<title>Computacion Paralela</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+
+<script>
+
+$(document).ready(function(){
+
+  $("#ExpImp").change(function(){
+    var valor = $(this).val();
+
+    if(valor=="Explicita")
+    {
+          $("#BusquedaExplicita").css("display", "block");
+    }else
+    {
+      $("#BusquedaExplicita").css("display", "none");
+    }
+  }
+);
+
+$("#ExpImp").change(function(){
+    var valor = $(this).val();
+
+    if(valor=="Implicita")
+    {
+          $("#BusquedaImplicita").css("display", "block");
+    }else
+    {
+      $("#BusquedaImplicita").css("display", "none");
+    }
+  }
+);
+
+$("#ExPat").change(function(){
+    var valor = $(this).val();
+
+    if(valor=="Exacta")
+    {
+          $("#BusquedaExacta").css("display", "block");
+    }else
+    {
+      $("#BusquedaExacta").css("display", "none");
+    }
+  }
+);
+
+$("#ExPat").change(function(){
+    var valor = $(this).val();
+
+    if(valor=="Patron")
+    {
+          $("#BusquedaPatron").css("display", "block");
+    }else
+    {
+      $("#BusquedaPatron").css("display", "none");
+    }
+  }
+);
+
+$("#SecPar").change(function(){
+    var valor = $(this).val();
+
+    if(valor=="Paralelo")
+    {
+          $("#SeleccionProcesadores").css("display", "block");
+    }else
+    {
+      $("#SeleccionProcesadores").css("display", "none");
+    }
+  }
+);
+
+$("#BusquedaExplicita").css("display", "none");$("#BusquedaImplicita").css("display", "none");
+$("#BusquedaExacta").css("display", "none");
+$("#BusquedaPatron").css("display", "none");
+$("#SeleccionProcesadores").css("display", "none");
+
+});
+
+</script>
+</head>
+
+<body>
+<div class="content">
+  <div id="header">
+    <div class="title">
+      <h1>ComputaciÃ³n Paralela</h1>
+      <br /> 
+      <h3>Proyecto final: "Procesamiento de Texto"</h3>
+    </div>
+  </div>
+  <div id="main">
+    <div class="center">
+<h1>Formulario de B&uacute;squeda:</h1>
+<br /> 
+Seleccione archivo a analizar: <br /><br /> 
+<form method="post" action="form.php">
+<input type="file" name="puntos" />
+<br /><br /><br />
+
+Seleccione tipo de b&uacute;squeda:
+<br /><br />
+<div id="TipoBusqueda"> 
+<select id="ExpImp">
+  <option value="Blanco"></option>
+  <option value="Explicita">Expl&iacute;cita</option>
+  <option value="Implicita">Impl&iacute;cita</option>
+</select>
+</div>
+
+<div id="BusquedaImplicita">
+<br/>Introduzca b&uacute;squeda impl&iacute;cita
+<br /><br />
+<input type="text" name="frases">
+</div>
+
+<div id="BusquedaExplicita">
+<br/>Seleccione tipo de b&uacute;squeda expl&iacute;cita 
+<br /><br />
+<select id="ExPat">
+  <option value="Blanco"></option>
+  <option value="Exacta">Exacta</option>
+  <option value="Patron">Patr&oacute;n</option>
+</select>
+</div>
+
+<div id="BusquedaExacta">
+<br/>Introduzca b&uacute;squeda exacta 
+<br /><br />
+<input type="text" name="frases">
+</div>
+
+<div id="BusquedaPatron">
+<br/>Seleccione b&uacute;squeda patr&oacute;n
+<br /><br />
+<input type="checkbox" name="patron" value="1"> Tel&eacute;fono <br>
+<input type="checkbox" name="patron" value="2"> Email <br>
+<input type="checkbox" name="patron" value="3"> Sitio Web <br>
+<input type="checkbox" name="patron" value="1"> Verbo <br>
+</div>
+
+<!--(Si se marca explicita deben aparecer dos opciones: Una para busqueda exacta y una para busqueda de patron, si se selecciona busqeuda exacta debe aparecer un campo de texto para escribir la palabra o frase. Si se selecciona patron debe cargarse un listado con opciones como telefonos, emails, sitios webs, verbos, etc)-->
+
+<br/>Seleccione tipo de ejecuci&oacute;n
+<br /><br />
+<div id="SeleccionEjecucion"> 
+<select id="SecPar">
+  <option value="Blanco"></option>
+  <option value="Secuencial">Secuencial</option>
+  <option value="Paralelo">Paralelo</option>
+</select>
+</div>
+
+<!--Al seleccionar paralelo debe aparecer un listado con opciones: 4 Procesadores, 8 Procesadores, 12 Procesadores, ..., hasta el total de procesadores disponibles-->
+
+<div id="SeleccionProcesadores">
+<br/>Seleccione n&uacute;mero de procesadores:
+<br /><br />
+<select id="NumeroProcesadores">
+   <option value="Blanco"></option>
+  <option value="Cuatro">4 Procesadores</option>
+  <option value="Ocho">8 Procesadores</option>
+  <option value="Doce">12 Procesadores</option>
+</select>
+</div>
+
+<br />
+<input type="submit" value="Buscar"/>
+
+<div id="Resultado">
+Aca ir&aacute; el resultado de la b&uacute;squeda seg&uacute;n se estipule la forma....
+   </div>
+    </div>
+   
+    <div class="leftmenu">
+      <div class="nav">
+        <ul>
+          <li><a href="http://www.elguetamotos.cl/biblia/">Inicio</a></li>
+          <li><a href="http://www.elguetamotos.cl/biblia/curso.php">Curso</a></li>
+          <li><a href="http://www.elguetamotos.cl/biblia/herramientas.php">Herramientas</a></li>
+            </ul>
+      </div>
+    </div>
+  </div>
+ <div id="prefooter">
+ </div>
+  <div id="footer">
+    <div class="padding"> Copyright Curso Computaci&oacute;n Paralela 2014 / Primer Semestre, UTEM </div>
+  </div>
+</div>
+</body>
+</body>
+</html>
