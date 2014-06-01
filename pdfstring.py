@@ -6,21 +6,17 @@ Created on Sun Jun  1 00:22:26 2014
 """
 
 import re
-import sys
-import os
+from PyPDF2 import PdfFileReader
 
 def pdf2string(path, borrarCaracteresEspeciales, separadosPorHoja):
-    # herramientas a usar    
-    from PyPDF2 import PdfFileReader
-    
     # abrir pdf en modo lectura
     pdf = PdfFileReader(open(path, "rb"))
 
     # imprime cuantas páginas tiene el pdf:
-    paginas = pdf.getNumPages()
+    numero_paginas = pdf.getNumPages()
     
-    # se inicia la cadena que contendrá las páginas 
-    contenido_pagina = ""
+    # se inicia la cadena que almacenará el contenido de las páginas del pdf 
+    contenido_libro = ""
     
     # instanciando lista a ocupar
     lista = list()
@@ -35,29 +31,27 @@ def pdf2string(path, borrarCaracteresEspeciales, separadosPorHoja):
     # retorna una lista
     if borrarCaracteresEspeciales:
         if separadosPorHoja:
-            for i in range(0, paginas):
+            for i in range(numero_paginas):
                 contenido_pagina = pdf.getPage(i).extractText().lower()
                 string_limpieza = re.sub('[^a-zA-Z]', '',contenido_pagina)
                 lista.append(string_limpieza)
-                content = ""
             return lista
         # caso 2: borrando caracteres especiales, sin separar hojas
         # retorna un string
         else:
-            for i in range(0, paginas):
-                contenido_pagina += pdf.getPage(i).extractText().lower()
-            string_limpieza = re.sub('[^a-zA-Z]', '',contenido_pagina)
+            for i in range(numero_paginas):
+                contenido_libro += pdf.getPage(i).extractText().lower()
+            string_limpieza = re.sub('[^a-zA-Z]', '',contenido_libro)
             return string_limpieza
     else:
         # caso 3: sin borrar caracteres especiales, separados por hoja
         # retorna una lista
         if separadosPorHoja:
-            for i in range(0, paginas):
-                lista.append(pdf.getPage(i).extractText().lower())
+            lista = [pdf.getPage(i).extractText().lower() for i in range(numero_paginas)]
             return lista
         # caso 4: sin borrar caracteres especiales, sin separar hojas
         # retorna un string
         else:
-            for i in range(0, paginas):
-                contenido_pagina += pdf.getPage(i).extractText().lower()
-            return contenido_pagina
+            for i in range(numero_paginas):
+                contenido_libro += pdf.getPage(i).extractText().lower()
+            return contenido_libro
