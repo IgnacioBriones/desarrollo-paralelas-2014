@@ -42,7 +42,8 @@ def pdf2string(path, borrarCaracteresEspeciales, separadosPorHoja):
             for i in range(numero_paginas):
                 contenido_libro += pdf.getPage(i).extractText().lower()
             string_limpieza = re.sub('[^a-zA-Z]', '',contenido_libro)
-            return string_limpieza
+            lista.append(string_limpieza)
+            return lista
     else:
         # caso 3: sin borrar caracteres especiales, separados por hoja
         # retorna una lista
@@ -54,4 +55,5 @@ def pdf2string(path, borrarCaracteresEspeciales, separadosPorHoja):
         else:
             for i in range(numero_paginas):
                 contenido_libro += pdf.getPage(i).extractText().lower()
-            return contenido_libro
+            lista.append(contenido_libro)
+            return lista
