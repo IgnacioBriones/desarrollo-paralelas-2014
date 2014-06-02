@@ -33,7 +33,6 @@ se intentará buscar una solución a este problema.
         if separadosPorHoja:
             for i in range(numero_paginas):
                 contenido_pagina = pdf.getPage(i).extractText().lower()
-                contenido_pagina = contenido_pagina.replace('á','a').replace('é','e').replace('í','i').replace('ó','o').replace('ú','u').replace('ñ','n')
                 string_limpieza = re.sub('[^a-zA-Z]', '',contenido_pagina)
                 lista.append(string_limpieza)
             return lista
@@ -42,7 +41,6 @@ se intentará buscar una solución a este problema.
         else:
             for i in range(numero_paginas):
                 contenido_libro += pdf.getPage(i).extractText().lower()
-                contenido_libro = contenido_libro.replace('á','a').replace('é','e').replace('í','i').replace('ó','o').replace('ú','u').replace('ñ','n')
             string_limpieza = re.sub('[^a-zA-Z]', '',contenido_libro)
             lista.append(string_limpieza)
             return lista
