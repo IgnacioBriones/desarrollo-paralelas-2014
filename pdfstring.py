@@ -6,6 +6,7 @@ Created on Sun Jun 1 00:22:26 2014
 """
 
 import re
+import unicodedata
 from PyPDF2 import PdfFileReader
 
 def pdf2string(path, borrarCaracteresEspeciales, separadosPorHoja):
@@ -33,6 +34,7 @@ se intentará buscar una solución a este problema.
         if separadosPorHoja:
             for i in range(numero_paginas):
                 contenido_pagina = pdf.getPage(i).extractText().lower()
+                contenido_pagina = unicodedata.normalize('NFKD', contenido_pagina).encode('ascii','ignore')        
                 string_limpieza = re.sub('[^a-zA-Z]', '',contenido_pagina)
                 lista.append(string_limpieza)
             return lista
@@ -41,6 +43,7 @@ se intentará buscar una solución a este problema.
         else:
             for i in range(numero_paginas):
                 contenido_libro += pdf.getPage(i).extractText().lower()
+                contenido_libro =  unicodedata.normalize('NFKD', contenido_libro).encode('ascii','ignore') 
             string_limpieza = re.sub('[^a-zA-Z]', '',contenido_libro)
             lista.append(string_limpieza)
             return lista
