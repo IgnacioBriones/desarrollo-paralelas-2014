@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Jun  1 00:22:26 2014
+Created on Sun Jun 1 00:22:26 2014
 
 @author: marco
 """
@@ -15,17 +15,17 @@ def pdf2string(path, borrarCaracteresEspeciales, separadosPorHoja):
     # imprime cuantas páginas tiene el pdf:
     numero_paginas = pdf.getNumPages()
     
-    # se inicia la cadena que almacenará el contenido de las páginas del pdf 
+    # se inicia la cadena que almacenará el contenido de las páginas del pdf
     contenido_libro = ""
-    
+    contenido_pagina = ""
     # instanciando lista a ocupar
     lista = list()
 
     """
-    NOTA: Cuando se ejecuta el borrado de caracteres especiales, los acentos
-    también son eliminados, aunque se incluyan en la sustitución; por lo que
-    se intentará buscar una solución a este problema.
-    """
+NOTA: Cuando se ejecuta el borrado de caracteres especiales, los acentos
+también son eliminados, aunque se incluyan en la sustitución; por lo que
+se intentará buscar una solución a este problema.
+"""
     
     # caso 1: borrando caracteres especiales, separados por hoja
     # retorna una lista
@@ -33,6 +33,7 @@ def pdf2string(path, borrarCaracteresEspeciales, separadosPorHoja):
         if separadosPorHoja:
             for i in range(numero_paginas):
                 contenido_pagina = pdf.getPage(i).extractText().lower()
+                contenido_pagina = contenido_pagina.replace('á','a').replace('é','e').replace('í','i').replace('ó','o').replace('ú','u').replace('ñ','n')
                 string_limpieza = re.sub('[^a-zA-Z]', '',contenido_pagina)
                 lista.append(string_limpieza)
             return lista
@@ -41,6 +42,7 @@ def pdf2string(path, borrarCaracteresEspeciales, separadosPorHoja):
         else:
             for i in range(numero_paginas):
                 contenido_libro += pdf.getPage(i).extractText().lower()
+                contenido_libro = contenido_libro.replace('á','a').replace('é','e').replace('í','i').replace('ó','o').replace('ú','u').replace('ñ','n')
             string_limpieza = re.sub('[^a-zA-Z]', '',contenido_libro)
             lista.append(string_limpieza)
             return lista
