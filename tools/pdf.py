@@ -6,9 +6,10 @@ Created on 13-05-2014
 
 from unpdfer import Unpdfer
 
-# set an input filename
-filename = 'myfile.pdf'
 
-# conver to text
-worker = Unpdfer()
-(created, pdftext, pdfhash, success) = worker.unpdf(filename, SCRUB=False, verbose=False)
+def loadPdfPath(filename):
+    # set an input filename
+    # conver to text
+    worker = Unpdfer()
+    (created, pdftext, pdfhash, success) = worker.unpdf(filename, SCRUB=False, verbose=False)
+    return created, pdftext, pdfhash, success
