@@ -23,10 +23,10 @@ def pdf2string(path, borrarCaracteresEspeciales, separadosPorHoja):
     lista = list()
 
     """
-NOTA: Cuando se ejecuta el borrado de caracteres especiales, los acentos
-también son eliminados, aunque se incluyan en la sustitución; por lo que
-se intentará buscar una solución a este problema.
-"""
+        NOTA: Cuando se ejecuta el borrado de caracteres especiales, los acentos
+        también son eliminados, aunque se incluyan en la sustitución; por lo que
+        se intentará buscar una solución a este problema.
+    """
     
     # caso 1: borrando caracteres especiales, separados por hoja
     # retorna una lista
@@ -37,7 +37,6 @@ se intentará buscar una solución a este problema.
                 contenido_pagina = unicodedata.normalize('NFKD', contenido_pagina).encode('ascii','ignore')        
                 string_limpieza = re.sub('[^a-zA-Z]', '',contenido_pagina)
                 lista.append(string_limpieza)
-            return lista
         # caso 2: borrando caracteres especiales, sin separar hojas
         # retorna un string
         else:
@@ -46,7 +45,8 @@ se intentará buscar una solución a este problema.
                 contenido_libro =  unicodedata.normalize('NFKD', contenido_libro).encode('ascii','ignore') 
             string_limpieza = re.sub('[^a-zA-Z]', '',contenido_libro)
             lista.append(string_limpieza)
-            return lista
+            
+        return lista
     else:
         # caso 3: sin borrar caracteres especiales, separados por hoja
         # retorna una lista
