@@ -1,4 +1,7 @@
 eclipse.preferences.version=1
+encoding//examples/exampleParallel.py=utf-8
+encoding//examples/exampleSerial.py=utf-8
+encoding//test/docatxt.py=utf-8
+encoding//test/pdfatxt.py=utf-8
+encoding//tools/pdfstring.py=utf-8
 encoding//tools/serial.py=utf-8
-encoding/exampleParallel.py=utf-8
-encoding/exampleSerial.py=utf-8
