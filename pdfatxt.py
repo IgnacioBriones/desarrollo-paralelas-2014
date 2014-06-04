@@ -5,6 +5,7 @@ import commands
 import re
 
 def transformaPDF(archivo):
+	lista = list()
 	print "Transformando de pdf a txt... " + archivo
 
 	comando = commands.getoutput("pdftotext "+archivo)
@@ -14,4 +15,5 @@ def transformaPDF(archivo):
 	string = string.replace("á","a").replace("é","e").replace("í","i").replace("ó","o").replace("ú","u").replace("ñ","n")
 	string = re.sub('[^a-zA-Z]', '', string)
 	open(txt, 'w').write(string)
-	return string,txt
+	lista.append(string)
+	return lista
