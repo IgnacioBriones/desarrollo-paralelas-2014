@@ -15,3 +15,10 @@ sheets = pdf2string(path, borrarCaracteresEspeciales=True, separadosPorHoja=True
 for sheet in sheets:
     pos = get_pattern(text=sheet, rank=2, word="casa")
     print pos
+'''
+Lo anterior arroja: File "example.py", line 20, in <module>
+                    match = get_pattern(text=sheet, rank=2, word="casa")
+                    File "/home/cluster/Escritorio/pruebas/tools/serial.py", line 24, in get_pattern
+                    text_rank1 = text[np.arange(0, len(text), rank + 1)]
+                    TypeError: len() of unsized object
+'''
