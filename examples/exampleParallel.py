@@ -7,28 +7,36 @@ Created on 14-05-2014
 
 from mpi4py import MPI
 from tools.serial import get_pattern
-import random
+from tools.pdfstring import pdf2string
+from time import time
 
 comm = MPI.COMM_WORLD()
 rank = comm.Get_rank()
 
-if rank == 0:
+words = ["casa", "perro", "cielo"]
+master = 0
+if rank == master:
+    #
+    t = time()
+    print "leyendo la biblia . . ."
     
-    # a modo de ejemplo generamos un array de numeros aleatorios
-    alfabeto = "abcdefghijklmnñopqrstuvwxyz"
+    path =  "./../files/biblia.pdf"
+    sheets = pdf2string(path, borrarCaracteresEspeciales=True, separadosPorHoja=True)
     
-    # Generamos un vector aleatorio con esta informacion posible
-    N = 1000000
-    text = [random.choice(alfabeto) for _ in range(N)]
-    print "codigo de la biblia en paralelo"
-    word = "casa"
-    comm.scatter(data=text)
-    comm.scatter(data=word)
+    print "biblia leida en ", time() - t, " segundos"
+else:
+    sheets = None
     
-match = get_pattern(text, rank, word)
+# usamos las mismas hojas para cada uno de los procesadores
+comm.bcast(sheets, root=master)
 
+match = {}
+for word in words:   
+    match{word} = [get_pattern(text=sheet, rank=rank, word=word) for sheet in sheets]
 
-if rank == 0:
-    
+# pasar cada resultado de cada uno de los nodos al maestro
+
+if rank == master:
+    pass
     
     
