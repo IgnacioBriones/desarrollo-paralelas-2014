@@ -3,26 +3,34 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-<title>Computacion Paralela</title>
+<title>Computaci&oacute;n Paralela</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
-
 
 <script>
 
 $(document).ready(function(){
+/*
+$(function(a){
+  a.fn.validCampoFranz=function(b){
+     a(this).on({keypress:function(a){
+       var c=a.which,d=a.keyCode,e=String.fromCharCode(c).toLowerCase(),f=b;
+         (-1!=f.indexOf(e)||9==d||37!=c&&37==d||39==d&&39!=c||8==d||46==d&&46!=c)&&161!=c||a.preventDefault()
+      }
+    })}
+  });
 
-  $("#ExpImp").change(function(){
-    var valor = $(this).val();
-
-    if(valor=="Explicita")
+$(function(){
+                $("#BusquedaExplicita").validCampoFranz(' abcdefghijklmnñopqrstuvwxyzáéiou');   
+                $("#BusquedaExplicita").validCampoFranz('0123456789');    
+            });
+*/
+$("#enviar").click(function(){ 
+    var ext = $("#archivo").val().split('.').pop().toLowerCase();
+    if($.inArray(ext, ['pdf','doc','docx']) == -1) 
     {
-          $("#BusquedaExplicita").css("display", "block");
-    }else
-    {
-      $("#BusquedaExplicita").css("display", "none");
+          alert("El archivo debe de ser PDF o Doc (Word)");
     }
-  }
-);
+ } );
 
 $("#ExpImp").change(function(){
     var valor = $(this).val();
@@ -37,28 +45,41 @@ $("#ExpImp").change(function(){
   }
 );
 
-$("#ExPat").change(function(){
+$("#ExpImp").change(function(){
     var valor = $(this).val();
 
-    if(valor=="Exacta")
+    if(valor=="Explicita")
     {
-          $("#BusquedaExacta").css("display", "block");
+          $("#BusquedaExplicita").css("display", "block");
     }else
     {
-      $("#BusquedaExacta").css("display", "none");
+      $("#BusquedaExplicita").css("display", "none");
     }
   }
 );
 
-$("#ExPat").change(function(){
+$("#Sugerencia").change(function(){
     var valor = $(this).val();
 
-    if(valor=="Patron")
+    if(valor=="Nosugerida")
     {
-          $("#BusquedaPatron").css("display", "block");
+          $("#BusquedaNosugerida").css("display", "block");
     }else
     {
-      $("#BusquedaPatron").css("display", "none");
+      $("#BusquedaNosugerida").css("display", "none");
+    }
+  }
+);
+
+$("#Sugerencia").change(function(){
+    var valor = $(this).val();
+
+    if(valor=="Sugerida")
+    {
+          $("#BusquedaSugerida").css("display", "block");
+    }else
+    {
+      $("#BusquedaSugerida").css("display", "none");
     }
   }
 );
@@ -76,21 +97,22 @@ $("#SecPar").change(function(){
   }
 );
 
-$("#BusquedaExplicita").css("display", "none");$("#BusquedaImplicita").css("display", "none");
-$("#BusquedaExacta").css("display", "none");
-$("#BusquedaPatron").css("display", "none");
+$("#BusquedaExplicita").css("display", "none");
+$("#BusquedaImplicita").css("display", "none");
+$("#BusquedaNosugerida").css("display", "none");
+$("#BusquedaSugerida").css("display", "none");
 $("#SeleccionProcesadores").css("display", "none");
 
-});
+}); 
 
 </script>
 </head>
-
 <body>
+	
 <div class="content">
   <div id="header">
     <div class="title">
-      <h1>ComputaciÃƒÂ³n Paralela</h1>
+      <h1>Computaci&oacute;n Paralela</h1>
       <br /> 
       <h3>Proyecto final: "Procesamiento de Texto"</h3>
     </div>
@@ -99,83 +121,100 @@ $("#SeleccionProcesadores").css("display", "none");
     <div class="center">
 <h1>Formulario de B&uacute;squeda:</h1>
 <br /> 
-Seleccione archivo a analizar: <br /><br /> 
-<form method="post" action="form.php">
-<input type="file" name="puntos" />
-<br /><br /><br />
+
+<form action="resultado.php" method="post" enctype="multipart/form-data">
+  <label for="archivo">Seleccione archivo a analizar:</label><br /><br /> 
+  <input type="file" name="archivo" id="archivo" />
+<br/><br/>
 
 Seleccione tipo de b&uacute;squeda:
 <br /><br />
 <div id="TipoBusqueda"> 
-<select id="ExpImp">
-  <option value="Blanco"></option>
+<select name="tipo_busqueda" id="ExpImp">
+  <option value=""></option>
   <option value="Explicita">Expl&iacute;cita</option>
   <option value="Implicita">Impl&iacute;cita</option>
 </select>
 </div>
 
-<div id="BusquedaImplicita">
-<br/>Introduzca b&uacute;squeda impl&iacute;cita
+<div id="BusquedaExplicita">
+<br/>Introduzca b&uacute;squeda expl&iacute;cita:
 <br /><br />
 <input type="text" name="frases">
 </div>
 
-<div id="BusquedaExplicita">
-<br/>Seleccione tipo de b&uacute;squeda expl&iacute;cita 
+<div id="BusquedaImplicita">
+<br/>Seleccione tipo de b&uacute;squeda impl&iacute;cita: 
 <br /><br />
-<select id="ExPat">
-  <option value="Blanco"></option>
-  <option value="Exacta">Exacta</option>
-  <option value="Patron">Patr&oacute;n</option>
+<select id="Sugerencia">
+  <option value=""></option>
+  <option value="No sugerida">No sugerida</option>
+  <option value="Sugerida">Sugerida</option>
 </select>
 </div>
 
-<div id="BusquedaExacta">
-<br/>Introduzca b&uacute;squeda exacta 
+<div id="BusquedaSugerida">
+<br/>Seleccione b&uacute;squeda a sugerir:
 <br /><br />
-<input type="text" name="frases">
+<input type="checkbox" name="patron" value="1"> Nombres <br>
+<input type="checkbox" name="patron" value="2"> Pa&iacute;ses <br>
+<input type="checkbox" name="patron" value="3"> Sitios Web <br>
+<input type="checkbox" name="patron" value="1"> Verbos <br>
 </div>
 
-<div id="BusquedaPatron">
-<br/>Seleccione b&uacute;squeda patr&oacute;n
+<br/>Seleccione p&aacute;ginas de b&uacute;squeda:
+<br /><br />Desde
+<input type="text" name="inicio" class="paginas"> hasta
+<input type="text" name="fin" class="paginas">
+
+<br/><br />Seleccione n&uacute;mero de saltos entre palabras:
 <br /><br />
-<input type="checkbox" name="patron" value="1"> Tel&eacute;fono <br>
-<input type="checkbox" name="patron" value="2"> Email <br>
-<input type="checkbox" name="patron" value="3"> Sitio Web <br>
-<input type="checkbox" name="patron" value="1"> Verbo <br>
-</div>
+<select name="num_salto" id="Salto">
+  <option value=""></option>
+  <option value="2">2</option>
+  <option value="5">5</option>
+  <option value="10">10</option>
+  <option value="15">15</option>
+  <option value="20">20</option>
+  <option value="25">25</option>
+  <option value="30">30</option>
+</select>
 
-<!--(Si se marca explicita deben aparecer dos opciones: Una para busqueda exacta y una para busqueda de patron, si se selecciona busqeuda exacta debe aparecer un campo de texto para escribir la palabra o frase. Si se selecciona patron debe cargarse un listado con opciones como telefonos, emails, sitios webs, verbos, etc)-->
+<br /><br/>Seleccione tolerancia de b&uacute;squeda:
+<br /><br />
+<select name="num_tolerancia" id="Tolerancia">
+  <option value=""></option>
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+</select>
 
-<br/>Seleccione tipo de ejecuci&oacute;n
+<br /><br/>Seleccione tipo de ejecuci&oacute;n:
 <br /><br />
 <div id="SeleccionEjecucion"> 
-<select id="SecPar">
-  <option value="Blanco"></option>
+<select name="tipo_ejecucion" id="SecPar">
+  <option value=""></option>
   <option value="Secuencial">Secuencial</option>
   <option value="Paralelo">Paralelo</option>
 </select>
 </div>
 
-<!--Al seleccionar paralelo debe aparecer un listado con opciones: 4 Procesadores, 8 Procesadores, 12 Procesadores, ..., hasta el total de procesadores disponibles-->
-
 <div id="SeleccionProcesadores">
 <br/>Seleccione n&uacute;mero de procesadores:
 <br /><br />
 <select id="NumeroProcesadores">
-   <option value="Blanco"></option>
+   <option value=""></option>
   <option value="Cuatro">4 Procesadores</option>
   <option value="Ocho">8 Procesadores</option>
   <option value="Doce">12 Procesadores</option>
 </select>
 </div>
-
+ 
 <br />
-<input type="submit" value="Buscar"/>
+<input id="enviar" type="submit" value="Buscar"/>
+</form><br />
 
-<div id="Resultado">
-Aca ir&aacute; el resultado de la b&uacute;squeda seg&uacute;n se estipule la forma....
-   </div>
     </div>
    
     <div class="leftmenu">
@@ -189,11 +228,12 @@ Aca ir&aacute; el resultado de la b&uacute;squeda seg&uacute;n se estipule la fo
     </div>
   </div>
  <div id="prefooter">
- </div>
+ </div>ubicada
   <div id="footer">
     <div class="padding"> Copyright Curso Computaci&oacute;n Paralela 2014 / Primer Semestre, UTEM </div>
   </div>
 </div>
+
 </body>
 </body>
 </html>
