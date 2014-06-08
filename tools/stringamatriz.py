@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+#funcion que con la pagina y el salto, transforma el string a una matriz para busquedas, retornando la matriz. Es necesario el salto para armar la matriz
 def matriz(pagina,salto):
 	matriz=[]
 	c=0
