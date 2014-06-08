@@ -37,7 +37,7 @@ for i in range(numero_paginas + 1):
 	matriz1.append(matriz(pagina[i],salto))
 
 
-# Funcion que revisa en cada pagina (ya en forma de matriz), cada palabra de la frase.
+#Revisa en cada pagina (ya en forma de matriz), cada palabra de la frase.
 for i in range(numero_paginas + 1):
 	for x in range (len(palabras)):      
 		Posicion_inicial(palabras[x],matriz1[i],salto,int(len(pagina[i])/salto),salto,i)
