@@ -23,23 +23,23 @@ inicio = 3
 fin = 6
 numero_paginas= fin - inicio
 for i in range(numero_paginas + 1):
-pagina.append(pagslimpias[i])
+	pagina.append(pagslimpias[i])   
 
 #lista que contiene las palabras de nuestra frase
 palabras = list()
 for i in range (len(sys.argv)):
-if i >= 1:
-palabras.append(sys.argv[i])
+	if i >= 1:
+		palabras.append(sys.argv[i])
 
 matriz1 = list()
 for i in range(numero_paginas + 1):
-salto = 10
-matriz1.append(matriz(pagina[i],salto))
+	salto = 10
+	matriz1.append(matriz(pagina[i],salto))
 
 
 # Funcion que revisa en cada pagina (ya en forma de matriz), cada palabra de la frase.
 for i in range(numero_paginas + 1):
-for x in range (len(palabras)):
-Posicion_inicial(palabras[x],matriz1[i],salto,int(len(pagina[i])/salto),salto,i)
+	for x in range (len(palabras)):      
+		Posicion_inicial(palabras[x],matriz1[i],salto,int(len(pagina[i])/salto),salto,i)
 
 #python explicitapdf.py laboratorio paralela 
