@@ -17,7 +17,7 @@ Para serial
 Si usted quiere hacer uso de esto debe
 * Clonar o descargar el repositorio en .zip
 * Bajar cualquier .pdf de la red y renombrarlo "c.pdf", se debe dejar el archivo pdf en la carpeta test
-* Una vez situado en .../test ejecutar desde la consola de comandos: "python explicitapdf.py -frase-"
+* Una vez situado en .../examples ejecutar desde la consola de comandos: "python explicitapdf.py -frase-"
 
 
 Para el paralelo
