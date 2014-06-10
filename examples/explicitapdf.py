@@ -1,22 +1,18 @@
 # -*- coding: utf-8 -*-
 
+#python explicitapdf.py -frase-
 import sys
-import random
-import commands
-import re
-import time
-import numpy as np
-import re
 
 from tools.pdftolist import pdf2string
 from tools.stringamatriz import matriz
 from tools.posicionInicial import Posicion_inicial
 
 #creamos una lista llamada pagina, que almacenara las paginas
-pagina = list()
+pagina = []
 
-#pagslimpias es el string que aloja el pdf formateado por paginas
-pagslimpias = pdf2string('c.pdf') #como es el path se le puede poner la ruta en donde esta el pdf
+#pagslimpias es el string que aloja el pdf formateado por paginas como es el
+#path se le puede poner la ruta en donde esta el pdf
+pagslimpias = pdf2string('./../files/biblia.pdf') 
 
 #almacenamos cuantas paginas quiere buscar en el pdf, en este caso buscaria en 4 paginas(desde la pagina 1 hasta la 4)
 inicio = 3
@@ -26,12 +22,12 @@ for i in range(numero_paginas + 1):
 	pagina.append(pagslimpias[i])   
 
 #lista que contiene las palabras de nuestra frase
-palabras = list()
-for i in range (len(sys.argv)):
+palabras = []
+for i in range(len(sys.argv)):
 	if i >= 1:
 		palabras.append(sys.argv[i])
 
-matriz1 = list()
+matriz1 = []
 for i in range(numero_paginas + 1):
 	salto = 10
 	matriz1.append(matriz(pagina[i],salto))
@@ -42,4 +38,4 @@ for i in range(numero_paginas + 1):
 	for x in range (len(palabras)):      
 		Posicion_inicial(palabras[x],matriz1[i],salto,int(len(pagina[i])/salto),salto,i)
 		
-#python explicitapdf.py -frase-
+

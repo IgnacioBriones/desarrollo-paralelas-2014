@@ -32,7 +32,7 @@ comm.bcast(sheets, root=master)
 
 match = {}
 for word in words:   
-    match{word} = [get_pattern(text=sheet, rank=rank, word=word) for sheet in sheets]
+    match[word] = [get_pattern(text=sheet, rank=rank, word=word) for sheet in sheets]
 
 # pasar cada resultado de cada uno de los nodos al maestro
 
