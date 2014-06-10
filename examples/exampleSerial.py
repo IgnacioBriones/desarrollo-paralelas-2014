@@ -6,25 +6,21 @@ Created on 14-05-2014
 '''
 
 from tools.serial import get_pattern
-from tools.pdfstring import pdf2string
+from tools.pdftolist import pdf2string
 from time import time
 
 #
+
+print "leyendo la biblia..."
+
+path = "./../files/biblia.pdf"
 t = time()
-print "leyendo la biblia . . ."
-
-path =  "./../files/biblia.pdf"
-sheets = pdf2string(path, borrarCaracteresEspeciales=True, separadosPorHoja=True)
-
+sheets = pdf2string(path=path)
 print "biblia leida en ", time() - t, " segundos"
+pos = []
+for index, sheet in enumerate(sheets):
+    pos.append((index, get_pattern(text=sheet, rank=5, word="casa")))
+print pos
 
-for sheet in sheets:
-    pos = get_pattern(text=sheet, rank=2, word="casa")
-    print pos
-'''
-Lo anterior arroja: File "example.py", line 20, in <module>
-                    match = get_pattern(text=sheet, rank=2, word="casa")
-                    File "/home/cluster/Escritorio/pruebas/tools/serial.py", line 24, in get_pattern
-                    text_rank1 = text[np.arange(0, len(text), rank + 1)]
-                    TypeError: len() of unsized object
-'''
+# test: se automatiza la verificacion de los resultados
+

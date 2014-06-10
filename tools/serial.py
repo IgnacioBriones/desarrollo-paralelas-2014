@@ -17,16 +17,21 @@ def get_pattern(text, rank, word):
     """toma un texto y un rank (que dice cuantos espacios se van a av"""
     
     # pasarlo a un array
-    text = np.array(text)
+    text = np.array(list(text))
     # buscamos la palabra casa
     p = re.compile(word)
     
-    text_rank1 = text[np.arange(0, len(text), rank + 1)]
-    text_rank1 = text_rank1.tolist()
-    text_rank1 = "".join(text_rank1)
-    
-    # buscamos las coincidencias de la palabra casa dentro de este string
-    return [(m.start(0), m.end(0)) for m in re.finditer(p, text_rank1)]
+    match = set()
+    for i in range(rank + 1):
+        textRank = text[np.arange(i, len(text), rank + 1)]
+        textRank = "".join(textRank.tolist())
+        m = [((rank + 1) * m.start(0) + i, (rank + 1) * (m.end(0) - 1) + i) for m in re.finditer(p, textRank)]
+        m = set(m)
+        # hacer la correccion del rank
+         
+        match = match | m
+    # buscamos las coincidencias de la palabra word dentro de este string
+    return match
     
     
     
