@@ -21,7 +21,7 @@ if rank == master:
     print "leyendo la biblia . . ."
     
     path =  "./../files/biblia.pdf"
-    sheets = pdf2string(path, borrarCaracteresEspeciales=True, separadosPorHoja=True)
+    sheets = pdf2string(path,borrarCaracteresEspeciales=True, separadosPorHoja=True)
     
     print "biblia leida en ", time() - t, " segundos"
 else:
