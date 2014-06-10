@@ -7,7 +7,7 @@ Created on 14-05-2014
 
 from mpi4py import MPI
 from tools.serial import get_pattern
-from tools.pdftostring import pdf2string
+from tools.pdfstring import pdf2string
 from time import time
 
 comm = MPI.COMM_WORLD()
