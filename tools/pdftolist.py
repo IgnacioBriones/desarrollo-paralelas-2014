@@ -19,8 +19,6 @@ def pdf2string(path):
     # imprime cuantas páginas tiene el pdf:
     numero_paginas = pdf.getNumPages()
     # uso de la librería PyPDF2 para obtener la cantidad de hojas del pdf
-    print "Numero de paginas del PDF: ", numero_paginas
-    print "Transformando de PDF a TXT... ", path
     for i in range(numero_paginas):
         #convierte página i de pdf en txt
         commands.getoutput("pdftotext -f "+str(i+1)+" -l "+str(i+1)+" "+path)
@@ -38,5 +36,4 @@ def pdf2string(path):
         lista.append(contenido_pagina)
         commands.getoutput("rm -R "+txt)
         
-    print "Tiempo de transformación de PDF: ", time.time() - t1, " segundos"
     return lista

@@ -1,14 +1,17 @@
 
 serial_implicito:
-	python exampleSerial.py
+	python exampleImplicitSerial.py
 
 serial_explicito:
-
+	python exampleSerial.py
 paralelo_implicito:
 
 paralelo_explicito:
-	mpiexec -n 4 -hostfile ./hostfile python ./examples/exampleParallel.py
+	mpiexec -n 60 -hostfile ./hostfile python ./exampleParallel.py
 	
 paralelo_explicito_un_nodo:
-	python ./examples/exampleParallel.py
+	mpiexec -n  4 python ./examples/exampleParallel.py
+	
+import_test:
+	mpiexec -n 60 -hostfile ./hostfile python ./test/importTest.py
 	

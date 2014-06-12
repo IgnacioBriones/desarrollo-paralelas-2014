@@ -19,7 +19,7 @@ sheets = pdf2string(path=path)
 print "biblia leida en ", time() - t, " segundos"
 pos = []
 for index, sheet in enumerate(sheets):
-    pos.append((index, get_pattern(text=sheet, rank=5, word="casa")))
+    pos.append((index, get_pattern(text=sheet, rank=61, word="casa")))
 print pos
 
 # test: se automatiza la verificacion de los resultados
