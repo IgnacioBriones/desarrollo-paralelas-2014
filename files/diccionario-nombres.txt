@@ -283,11 +283,11 @@ hebe
 helena
 heli
 hector
-heriberto/a
+heriberto
 hermelando
-herminio/a
+herminio
 hernan
-higinio/a
+higinio
 hilda
 hipolito
 homero
@@ -510,7 +510,7 @@ rocio
 rodolfo
 rodrigo
 rogelio
-rolando rolan
+rolando
 roman
 romeo
 romilda
