@@ -4,4 +4,4 @@ encoding//examples/exampleSerial.py=utf-8
 encoding//examples/explicitapdf.py=utf-8
 encoding//tools/pdfstring.py=utf-8
 encoding//tools/pdftolist.py=utf-8
-encoding//tools/serial.py=utf-8
+encoding//tools/serial/__init__.py=utf-8

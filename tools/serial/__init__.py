@@ -15,7 +15,6 @@ import re
 
 def get_pattern(text, rank, word):
     """toma un texto y un rank (que dice cuantos espacios se van a av"""
-    
     # pasarlo a un array
     text = np.array(list(text))
     # buscamos la palabra casa
