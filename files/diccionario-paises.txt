@@ -162,7 +162,6 @@ republicadominicana
 ruanda
 rumania
 rusia
-saharaoccidental
 sanmarino
 senegal
 serbia
@@ -178,7 +177,7 @@ tailandia
 taiwan
 tanzania
 tonga
-trinidad y tobago
+trinidadytobago
 tunez
 turkmenistan
 turquia
