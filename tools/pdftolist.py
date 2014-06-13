@@ -8,7 +8,6 @@ from PyPDF2 import PdfFileReader
 
 def pdf2string(path):
     # tiempo inicial
-    t1 = time.time()
     # se inicia la cadena que almacenará el contenido de cada página
     # del pdf
     contenido_pagina = ""
@@ -21,7 +20,7 @@ def pdf2string(path):
     # uso de la librería PyPDF2 para obtener la cantidad de hojas del pdf
     for i in range(numero_paginas):
         #convierte página i de pdf en txt
-        commands.getoutput("pdftotext -f "+str(i+1)+" -l "+str(i+1)+" "+path)
+        commands.getoutput("pdftotext -f " + str(i+1) + " -l "+str(i+1)+" "+path)
         # reemplazo de .pdf a .txt en path
         txt= path.replace(".pdf", ".txt");
         # abrir fichero txt que trae el contenido de la página i del pdf + limpieza del string

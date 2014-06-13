@@ -29,7 +29,7 @@ frase = fraseimplicita()
 for palabra in frase:
     print "\nPalabra: ",palabra
     for index, sheet in enumerate(sheets):
-	pos.append((index, get_pattern(text=sheet, rank=0, word=palabra)))
+	pos.append((index, get_pattern(text=sheet, rank=1, word=palabra)))
     print pos
     del pos[:]
 

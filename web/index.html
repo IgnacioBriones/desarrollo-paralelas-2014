@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<title>Computaci&oacute;n Paralela</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="validaciones.js"></script>
+
+<script type="text/javascript">
+
+            $(function(){
+                
+                $('#bus_explicita').validCampoFranz(' abcdefghijklmnopqrstuvwxyzáéiou');
+   
+            });
+</script>
+
+<script type="text/javascript">
+            
+            function validar() { 
+
+                if($('select').val()=='Explicita'){
+
+                    var bus_explicita = document.getElementById("bus_explicita").value;
+            
+                        if (bus_explicita.length == 0 || /^\s+$/.test(bus_explicita)) {
+                                      
+                                      alert('El campo de texto esta vacio!');
+                                      return false;
+                        }  }        
+    
+                var ExpImp = document.getElementById("ExpImp").value;
+                        
+                        if(ExpImp == ""){
+                                  
+                                  alert('Debe elegir una opcion en el combo!');
+                                  return false;
+                        }                  
+            
+                var SecPar = document.getElementById("SecPar").value;
+                        
+                        if(Sugerencia == ""){
+                                  
+                                  alert('Debe elegir una opcion en el combo!');
+                                  return false;
+                        }
+
+                  if($('select').val()=='Paralelo'){      
+
+                      var NumeroProcesadores = document.getElementById("NumeroProcesadores").value;
+                        
+                        if(NumeroProcesadores == ""){
+                                  
+                                  alert('Debe elegir una opcion en el combo!');
+                                  return false;
+                        }}
+  
+            return true;
+            }
+</script>      
+
+<script>
+
+$(document).ready(function(){
+
+$("#enviar").click(function(){ 
+    var ext = $("#archivo").val().split('.').pop().toLowerCase();
+    
+    if($.inArray(ext, ['pdf']) == -1) 
+    {
+          alert("El archivo debe de ser PDF");
+          return false;
+    }else{
+        return true;
+    }
+ });
+
+$("#ExpImp").change(function(){
+    var valor = $(this).val();
+
+    if(valor=="Implicita")
+    {
+          $("#BusquedaImplicita").css("display", "block");
+    }else
+    {
+      $("#BusquedaImplicita").css("display", "none");
+    }
+  });
+
+$("#ExpImp").change(function(){
+    var valor = $(this).val();
+
+    if(valor=="Explicita")
+    {
+          $("#BusquedaExplicita").css("display", "block");
+    }else
+    {
+      $("#BusquedaExplicita").css("display", "none");
+    }
+  });
+
+$("#SecPar").change(function(){
+    var valor = $(this).val();
+
+    if(valor=="Paralelo")
+    {
+          $("#SeleccionProcesadores").css("display", "block");
+    }else
+    {
+      $("#SeleccionProcesadores").css("display", "none");
+    }
+  });
+
+$("#BusquedaExplicita").css("display", "none");
+$("#BusquedaImplicita").css("display", "none");
+$("#SeleccionProcesadores").css("display", "none");
+
+}); 
+
+</script>
+</head>
+<body>
+	
+<div class="content">
+  <div id="header">
+    <div class="title">
+      <h1>Computaci&oacute;n Paralela</h1>
+      <br /> 
+      <h3>Proyecto final: "Procesamiento de Texto"</h3>
+    </div>
+  </div>
+  <div id="main">
+    <div class="center">
+<h1>Formulario de B&uacute;squeda:</h1>
+<br /> 
+
+<form action="resultado.php" method="post" enctype="multipart/form-data" onsubmit="return validar()">
+  <label for="archivo">Seleccione archivo a analizar:</label><br /><br /> 
+  <input type="file" name="archivo" id="archivo" />
+<br/><br/>
+
+Seleccione tipo de b&uacute;squeda:
+<br /><br />
+<div id="TipoBusqueda"> 
+<select name="tipo_busqueda" id="ExpImp">
+  <option value="">Seleccione una opci&oacute;n</option>
+  <option value="Explicita">Expl&iacute;cita</option>
+  <option value="Implicita">Impl&iacute;cita</option>
+</select>
+</div>
+
+<div id="BusquedaExplicita">
+<br/>Introduzca b&uacute;squeda expl&iacute;cita:
+<br /><br />
+<input type="text" name="frases" id="bus_explicita">
+</div>
+
+<br />Seleccione tipo de ejecuci&oacute;n:
+<br /><br />
+<div id="SeleccionEjecucion"> 
+<select name="tipo_ejecucion" id="SecPar">
+  <option value="">Seleccione una opci&oacute;n</option>
+  <option value="Secuencial">Secuencial</option>
+  <option value="Paralelo">Paralelo</option>
+</select>
+</div>
+
+<div id="SeleccionProcesadores">
+<br/>Seleccione n&uacute;mero de procesadores:
+<br /><br />
+<select id="NumeroProcesadores">
+   <option value="">Seleccione una opci&oacute;n</option>
+  <option value="Cuatro">4 Procesadores</option>
+  <option value="Ocho">8 Procesadores</option>
+  <option value="Doce">12 Procesadores</option>
+</select>
+</div>
+ 
+<br /><br/>
+<input id="enviar" type="submit" value="Buscar"/>
+</form><br />
+
+    </div>
+   
+    <div class="leftmenu">
+      <div class="nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="curso.php">Curso</a></li>
+          <li><a href="herramientas.php">Herramientas</a></li>
+            </ul>
+      </div>
+    </div>
+  </div> 
+  <div id="prefooter">
+ </div>
+  <div id="footer">
+    <div class="padding"> Copyright Curso Computaci&oacute;n Paralela 2014 / Primer Semestre, UTEM </div>
+  </div>
+</div>
+
+</body>
+</body>
+</html>

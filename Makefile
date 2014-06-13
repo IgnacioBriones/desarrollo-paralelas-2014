@@ -7,7 +7,7 @@ serial_explicito:
 paralelo_implicito:
 
 paralelo_explicito:
-	mpiexec -n 60 -hostfile ./hostfile python ./exampleParallel.py
+	mpiexec -n 40 -hostfile ./hostfile python ./exampleParallel.py
 	
 paralelo_explicito_un_nodo:
 	mpiexec -n  4 python ./examples/exampleParallel.py
