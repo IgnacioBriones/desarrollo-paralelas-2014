@@ -10,6 +10,7 @@ from time import time
 import os
 import commands
 import json
+from tools.diccionarios import lista_diccionario
 
 try:
     from tools.serial import get_pattern
@@ -20,7 +21,7 @@ except Exception:
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 
-words = ["jofre"]
+words = lista_diccionario()
 master = 0
 sheets = None
 
