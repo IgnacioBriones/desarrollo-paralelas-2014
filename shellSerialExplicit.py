@@ -6,6 +6,7 @@ Created on 14-05-2014
 '''
 from tools.serial import get_pattern
 from tools.pdftolist import pdf2string
+from tools.stringamatriz import str2matrix
 import json
 import sys
 
@@ -23,6 +24,7 @@ match = [m for m in match if m['position'] != set([])]
 
 for m in match:
     m['position'] = list(m['position'])[0]
+sheets = [str2matrix(text=sheet, ncol=60) for s in sheets]
 bible = {'sheets':sheets, 'match':match}
 print json.dumps(bible)   
 

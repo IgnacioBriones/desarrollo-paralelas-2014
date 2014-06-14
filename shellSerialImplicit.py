@@ -23,7 +23,7 @@ match = [m for m in match if m['position'] != set([])]
 
 for m in match:
     m['position'] = list(m['position'])[0]
-    
+sheets = [str2matrix(text=sheet, ncol=60) for s in sheets]   
 bible = {'sheets':sheets, 'match':match}
 print json.dumps(bible)    
 

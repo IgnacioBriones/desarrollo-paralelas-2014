@@ -5,6 +5,7 @@ encoding//examples/explicitapdf.py=utf-8
 encoding//tools/pdfstring.py=utf-8
 encoding//tools/pdftolist.py=utf-8
 encoding//tools/serial/__init__.py=utf-8
+encoding//tools/stringamatriz.py=utf-8
 encoding//tools/stringdiccionarios.py=utf-8
 encoding/exampleImplicitSerial.py=utf-8
 encoding/exampleParallel.py=utf-8
