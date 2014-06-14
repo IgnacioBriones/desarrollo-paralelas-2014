@@ -51,6 +51,8 @@ if rank == master:
     
     for m in match:
         m['position'] = list(m['position'])[0]
-    print json.dumps(match)
+        
+    bible = {'sheets':sheets, 'match':match}
+    print json.dumps(bible)
     
     

@@ -23,6 +23,7 @@ match = [m for m in match if m['position'] != set([])]
 
 for m in match:
     m['position'] = list(m['position'])[0]
-    
-print json.dumps(match)
+bible = {'sheets':sheets, 'match':match}
+print json.dumps(bible)   
+
     
