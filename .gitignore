@@ -2,4 +2,5 @@
 .pydevproject
 *~
 .setting
+.settings
 *.pyc
