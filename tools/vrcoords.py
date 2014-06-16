@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+#Verificar si una lista de pares ordenados pertenece a una misma recta
 
 def vr(coords):
     coords.sort()
@@ -6,7 +6,6 @@ def vr(coords):
     y=[]
     for i in range(len(coords)):
         x.append(coords[i][0])
-    for i in range(len(coords)):
         y.append(coords[i][1])
 
     if(len(coords)<=1):
