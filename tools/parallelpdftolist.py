@@ -17,6 +17,12 @@ def parallelpdf2string(comm, path):
     aux2 = []
     adicional = []
     master = 0
+    es_perfecto = 0
+    while(es_multiplo == 0):
+	if total % size != 0:
+            total = total + 1
+        else:
+            es_multiplo = 1
     pag_por_proc = total / size
     
     if rank == master:
