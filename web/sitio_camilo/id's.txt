@@ -1,0 +1,21 @@
+id's
+
+TipodeBusqueda: selección entre explícita e implícita.
+ExpImp: combobox de selección entre estas.
+
+BusquedaImplicta: textbox de frase a buscar.
+
+BusquedaExplicita: selección entre exacta y patrón.
+ExPat: combobox de selección estas.
+
+BusquedaExacta: textbox de frase a buscar.
+
+BusquedaPatron: selección de patrones a buscar.
+
+SeleccionEjecucio: selección entre secuencial y paralelo.
+SecPar: combox de selección entre estos.
+
+SeleccionProcesadores: selección de número de procesadores (se coloco 4,8,12).
+NumeroProcesadores: combobox de selección entre estos.
+
+Resultado: donde irá el resultado de la búsqueda.

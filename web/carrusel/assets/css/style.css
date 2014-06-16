@@ -1,0 +1,44 @@
+#owl-demo .owl-item div{
+      padding:5px;
+      text-align: center;
+}
+#owl-demo .owl-item img{
+      display: inline-block;
+      width: auto;
+      height: auto;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+}
+#margen-izquierda{
+  display: inline-block;
+  width: 400px;
+  text-align: left;
+  height: auto;
+}
+#margen-derecha{
+  display: inline-block;
+  width: 400px;
+  height: auto;
+  text-align: right;
+}
+
+#match{
+  width: auto;
+  height: auto;
+  font-size: 10px;
+  font-family: calibri;
+  font-weight: bold;
+  color: white;
+  background-color: #0F0;
+  display: inline;
+}
+
+#non_match{
+  width: auto;
+  height: auto;
+  font-size: 10px;
+  font-family: calibri;
+  font-weight: bold;
+  display: inline;
+}
