@@ -17,7 +17,7 @@ def parallelpdf2string(comm, path):
     aux2 = []
     adicional = []
     master = 0
-    es_perfecto = 0
+    es_multiplo = 0
     while(es_multiplo == 0):
 	if total % size != 0:
             total = total + 1
