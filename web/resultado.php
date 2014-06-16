@@ -73,24 +73,55 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 		$tamano = $_FILES['archivo']['size'];
 		
 		$nombre = str_replace(" ", "_", $nombre);
+
+		$caracteres = array('(', ')',"'", "\"","");
+		$nombre = str_replace($caracteres, "", $nombre);
+		
 		$nombre = time()."_".$nombre;
 		
 		//cargando archivo
 		move_uploaded_file($nombre_tmp, "subidas/" . $nombre);
-		  
-	
-		$consulta_secuencial_explicita = "python /mpi/SerialVersion.py ". "/var/www/sitio/subidas/".$nombre ." ".$_POST['frases'];
-		//echo $consulta_secuencial;
-		$consulta_secuencial_implicita = "python /mpi/SerialVersion.py ". "/var/www/sitio/subidas/".$nombre ." ".$_POST[''];
-		//echo $consulta_secuencial;
 		
-		$salida = shell_exec($consulta_secuencial_explicita);
-    
-    $salida2 = shell_exec($consulta_secuencial_implicita);
 		
-    echo nl2br($salida);
-
-    echo nl2br($salida2);
+		if($_POST['tipo_ejecucion'] == "Secuencial")
+		{
+			if($_POST['tipo_busqueda'] == "Explicita")
+			{
+				//Secuencial Explicito
+				$consulta_secuencial_explicita = "python /mpi/desarrollo-paralelas-2014/shellSerialExplicit.py"." "."/mpi/desarrollo-paralelas-2014/web/subidas/".$nombre." '".$_POST['frases']."'";
+				$salida = shell_exec($consulta_secuencial_explicita);
+				#echo $consulta_secuencial_explicita;
+				echo nl2br($salida);
+			}
+			else
+			{
+				//Secuencial Implicito
+				$consulta_secuencial_implicita = "python /mpi/desarrollo-paralelas-2014/shellSerialImplicit.py"." "."/mpi/desarrollo-paralelas-2014/web/subidas/".$nombre;
+				$salida = shell_exec($consulta_secuencial_implicita);
+				#echo $consulta_secuencial_implicita;
+				echo nl2br($salida);
+			}
+		}
+		else
+		{
+			if($_POST['tipo_busqueda'] == "Explicita")
+			{
+				//Paralelo Explicito
+				$consulta_paralela_explicita = "mpiexec "."-n ".$_POST['NumeroProcesadores']." --hostfile /mpi/desarrollo-paralelas-2014/hostfile"." python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py"." "."/mpi/desarrollo-paralelas-2014/web/subidas/".$nombre." '".$_POST['frases']."'";
+				$salida = shell_exec($consulta_paralela_explicita);
+				#echo $consulta_paralela_explicita;
+				echo nl2br($salida);
+				echo shell_exec("echo $USER");
+			}
+			else
+			{
+				//Paralelo Implicito
+				$consulta_paralela_implicita = "mpiexec "."-n ".$_POST['NumeroProcesadores']." --hostfile /mpi/desarrollo-paralelas-2014/hostfile"." python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py"." "."/mpi/desarrollo-paralelas-2014/web/subidas/".$nombre;
+				$salida = shell_exec($consulta_paralela_implicita);	
+				#echo $consulta_paralela_implicita;
+				echo nl2br($salida);
+			}
+		}
 		
     echo "<br /><br />";
 	}
