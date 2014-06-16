@@ -11,7 +11,10 @@ import os
 import commands
 import json
 from tools.diccionarios import lista_diccionario
+<<<<<<< HEAD
 from tools.stringamatriz import str2matrix
+=======
+>>>>>>> cf5a84459b65b4899e4f156bfbda866fb9c49b71
 import sys
 
 try:
@@ -52,8 +55,15 @@ if rank == master:
     
     for m in match:
         m['position'] = list(m['position'])[0]
+<<<<<<< HEAD
     sheets = [str2matrix(text=sheet, ncol=60) for sheet in sheets]    
     bible = {'sheets':sheets, 'match':match}
     #print json.dumps(bible)
     print match
+=======
+    sheets = [str2matrix(text=sheet, ncol=60) for s in sheets]    
+    bible = {'sheets':sheets, 'match':match}
+    print json.dumps(bible)
+    
+>>>>>>> cf5a84459b65b4899e4f156bfbda866fb9c49b71
     

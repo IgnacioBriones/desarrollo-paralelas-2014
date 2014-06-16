@@ -1,1 +1,0 @@
-export PYTHONPATH=/mpi/desarrollo-paralelas-2014/tools

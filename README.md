@@ -10,6 +10,40 @@ funciones que formatean pdf y doc a txt, dejandolo listo para busquedas correspo
 Forma de uso por linea de comando
 ==
 
+La linea de comandos es muy simple de usar (si está acostumbrado a usar lineas de comandos), tenemos 4 formas de usar la linea de comandos y estas dependeran de lo que usted quiera obtener de nuestro algoritmo.
+
+* Serial explícito
+
+ejemplo:
+<pre><code class="shell">
+python shellSerialExplicit.py  ./files/biblia.pdf "ola k ase"
+</code></pre>
+
+Considere que siempre las frases deben ir encerradas entre comillas para que python considere que es solo un argumento y no varios.
+
+* Serial implicito
+
+El serial implícito hace busquedas en un diccionario en la cual se encuentran las palabras relacionadas a las más reveladores y terroríficas predicciones de nuestro tiempo
+
+<pre><code class="shell">
+python shellSerialImplicit.py  ./files/biblia.pdf
+</code></pre>
+* Paralelo explícito
+<pre><code class="shell">
+mpiexec -n 4 python --hostfile ./hostfile shellParallelExplicit.py ./files/biblia.pdf "ola k ase"
+</code></pre>
+
+* Paraleo implícito
+<pre><code class="shell">
+mpiexec -n 4 --hostfile ./hostfile python shellParallelImplicit.py ./files/biblia.pdf
+</code></pre>
+
+
+Todos estos algoritmos generarán en la consola un archivo json que puede ser consumido con el lenguaje servidor que usted prefiera.
+
+
+
+
 
 Para serial
 ==
