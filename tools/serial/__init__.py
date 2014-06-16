@@ -30,6 +30,14 @@ def get_pattern(text, rank, word):
          
         match = match | m
     # buscamos las coincidencias de la palabra word dentro de este string
+    
+    # buscamos las posiciones especificas de cada una de las letras
+    match = list(match)
+    try:
+        match = [range(m[0], m[1] + 1, rank + 1) for m in match]
+    except :
+        pass
+    
     return match
     
     

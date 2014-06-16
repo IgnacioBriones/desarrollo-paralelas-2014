@@ -16,7 +16,7 @@ try:
     from tools.serial import get_pattern
     from tools.pdftolist import pdf2string
 except Exception:
-    print "el nodo con ip " + commands.getoutput("/sbin/ifconfig").split("\n")[1].split()[1][5:] +" y rank "+str(MPI.COMM_WORLD.rank)+ "no reconoce las librerias" 
+    print "el nodo con ip " + commands.getoutput("/sbin/ifconfig").split("\n")[1].split()[1][5:] + " y rank " + str(MPI.COMM_WORLD.rank) + "no reconoce las librerias" 
 
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
@@ -29,7 +29,7 @@ if rank == master:
     #
     t = time()
     currentDir = os.path.dirname(os.path.abspath(__file__))
-    #path = currentDir + "/../files/biblia.pdf"
+    # path = currentDir + "/../files/biblia.pdf"
     path = currentDir + "/files/biblia.pdf"
     sheets = pdf2string(path=path)
 # usamos las mismas hojas para cada uno de los procesadores
@@ -39,15 +39,15 @@ match = [[{'word':word, 'page':page, 'jump':rank + 1, 'position':get_pattern(tex
           for page, sheet in enumerate(sheets)] for word in words ]
 
 match = sum(match, [])
-match = [m for m in match if m['position'] != set([])]
-match = comm.gather(match,root=master)
+match = [m for m in match if m['position'] != []]
+match = comm.gather(match, root=master)
 
 if rank == master:
-    match = [m for m in match if m != []]
-    match = sum(match,[])
+    match = sum(match, [])
     
     for m in match:
-        m['position']=list(m['position'])[0]
+        m['n'] = len(m['position'])
+
     print json.dumps(match)
     
     

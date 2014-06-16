@@ -12,18 +12,19 @@ import json
 
 path = "files/biblia.pdf"
 sheets = pdf2string(path=path)
-rank = 0
+rank = 2
 
 words = ['casa']
 
 for word in words:
     match = [[{'word':word, 'page':page, 'jump':rank + 1, 'position':get_pattern(text=sheet, rank=rank, word=word)}
           for page, sheet in enumerate(sheets)] for word in words ]
-    match = sum(match,[])
-    match = [m for m in match if m['position'] != set([])]
-
+    match = sum(match, [])
+    match = [m for m in match if m['position'] != []]
+    
 for m in match:
-    m['position']=list(m['position'])[0]
+    m['n'] = len(m['position'])
+
 print json.dumps(match)
 
 # test: se automatiza la verificacion de los resultados
