@@ -11,6 +11,8 @@ import os
 import commands
 import json
 from tools.diccionarios import lista_diccionario
+import sys
+from tools.stringamatriz import str2matrix
 
 try:
     from tools.serial import get_pattern
@@ -20,37 +22,30 @@ except Exception:
 
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
+currentDir = os.path.dirname(os.path.abspath(__file__))
 
-words = lista_diccionario()
+words = ["perro", "casa"]
+path = currentDir + '/files/biblia.pdf'
+sheets = parallelpdf2string(comm=comm, path=path)
+
 master = 0
-sheets = None
-
-
-
-if rank == master:
-    #
-    t = time()
-    currentDir = os.path.dirname(os.path.abspath(__file__))
-    # path = currentDir + "/../files/biblia.pdf"
-    path = currentDir + "/files/biblia.pdf"
-    sheets = pdf2string(comm=comm, path=path)
-    
-# usamos las mismas hojas para cada uno de los procesadores
-sheets = comm.bcast(sheets, root=master)
-
+print len(sheets)
 match = [[{'word':word, 'page':page, 'jump':rank + 1, 'position':get_pattern(text=sheet, rank=rank, word=word)}
           for page, sheet in enumerate(sheets)] for word in words ]
 
 match = sum(match, [])
-match = [m for m in match if m['position'] != []]
+match = [m for m in match if m['position'] != set([])]
 match = comm.gather(match, root=master)
 
 if rank == master:
+    match = [m for m in match if m != []]
     match = sum(match, [])
     
     for m in match:
-        m['n'] = len(m['position'])
-
-    print json.dumps(match)
+        m['position'] = list(m['position'])
+    
+    sheets = [str2matrix(text=sheet, ncol=60) for s in sheets]    
+    bible = {'sheets':sheets, 'match':match}
+    print json.dumps(bible)
     
     

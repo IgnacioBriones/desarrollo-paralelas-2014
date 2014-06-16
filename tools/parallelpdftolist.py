@@ -42,4 +42,7 @@ def parallelpdf2string(comm, path):
         lista2 = []
         for i in range(len(aux2)):
             lista2 += aux2[i]
-        return lista2
+    else:
+        lista2 = None
+        
+    return comm.bcast(lista2, root=master)
