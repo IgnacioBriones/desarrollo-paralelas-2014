@@ -10,7 +10,7 @@ from time import time
 import os
 import commands
 import json
-from tools.diccionarios import lista_diccionario
+from tools.stringamatriz import str2matrix
 import sys
 
 try:
@@ -51,8 +51,12 @@ if rank == master:
     
     for m in match:
         m['position'] = list(m['position'])[0]
-    sheets = [str2matrix(text=sheet, ncol=60) for s in sheets]    
+
+    sheets = [str2matrix(text=sheet, ncol=60) for sheet in sheets]    
     bible = {'sheets':sheets, 'match':match}
+    json.dumps(bible)
+
+
     print json.dumps(bible)
-    
+
     

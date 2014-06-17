@@ -9,6 +9,7 @@ from tools.pdftolist import pdf2string
 import json
 import sys
 from tools.diccionarios import lista_diccionario
+from tools.stringamatriz import str2matrix
 
 path = sys.argv[1]
 words = lista_diccionario()
@@ -22,9 +23,9 @@ match = sum(match, [])
 match = [m for m in match if m['position'] != set([])]
 
 for m in match:
-    m['position'] = list(m['position'])[0]
+    m['position'] = list(m['position'])
 sheets = [str2matrix(text=sheet, ncol=60) for s in sheets]   
 bible = {'sheets':sheets, 'match':match}
-print json.dumps(bible)    
+print json.dumps(bible)   
 
     

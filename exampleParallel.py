@@ -7,6 +7,7 @@ Created on 14-05-2014
 
 from mpi4py import MPI
 from time import time
+import sys
 import os
 import commands
 import json
@@ -21,7 +22,9 @@ except Exception:
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 
-words = lista_diccionario()
+#words = lista_diccionario()
+words = sys.argv[1]
+words = words.split()
 master = 0
 sheets = None
 
@@ -32,8 +35,9 @@ if rank == master:
     t = time()
     currentDir = os.path.dirname(os.path.abspath(__file__))
     # path = currentDir + "/../files/biblia.pdf"
-    path = currentDir + "/files/biblia.pdf"
-    sheets = pdf2string(comm=comm, path=path)
+
+path = "files/biblia.pdf"
+sheets = parallelpdf2string(comm=comm, path=path)
     
 # usamos las mismas hojas para cada uno de los procesadores
 sheets = comm.bcast(sheets, root=master)
@@ -52,5 +56,6 @@ if rank == master:
         m['n'] = len(m['position'])
 
     print json.dumps(match)
+    print "Tiempo Ejecución:",time()-t, "segundos"
     
     

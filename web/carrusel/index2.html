@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<body>
+    <div id="centro">
+      
+      <?php 
+       
+        for($i=0;$i<60;$i++){
+          for($j=0;$j<60;$j++){
+             if($j==$i){
+                echo "<div id='match'>A</div>";
+             }
+             else{
+                echo "<div id='non_match'>A</div>";
+             }
+          }
+          echo "\n"; 
+        }
+      ?>
+      </div>
+    </div>
+</body>
+</html>

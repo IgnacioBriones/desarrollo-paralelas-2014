@@ -7,11 +7,12 @@ Created on 14-05-2014
 
 from mpi4py import MPI
 from time import time
-import os
 import commands
 import json
 from tools.diccionarios import lista_diccionario
+from tools.stringamatriz import str2matrix
 import sys
+
 
 try:
     from tools.serial import get_pattern
