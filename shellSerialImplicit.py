@@ -26,6 +26,6 @@ for m in match:
     m['position'] = list(m['position'])
 sheets = [str2matrix(text=sheet, ncol=60) for s in sheets]   
 bible = {'sheets':sheets, 'match':match}
-print json.dumps(bible)    
+print json.dumps(bible)   
 
     
