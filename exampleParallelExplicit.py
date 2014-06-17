@@ -25,6 +25,9 @@ rank = comm.Get_rank()
 currentDir = os.path.dirname(os.path.abspath(__file__))
 
 words = ["perro", "casa"]
+sdrow = [w[::-1] for w in words]
+
+words = words + sdrow
 path = currentDir + '/files/biblia.pdf'
 sheets = parallelpdf2string(comm=comm, path=path)
 
