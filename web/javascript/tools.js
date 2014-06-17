@@ -5,13 +5,18 @@ function changeClass(x,y){
 // "non_match" a "match"
 
 setSheet = function(sheets){
-	
+// a cada hoja del html le asigna la hoja del json
 	for(var nhoja=0; nhoja < sheets.lengh;nhoja++){
+		var sheet = getElementById("sheet"+nhoja)
 		for(var nfila=0; nfila<sheets[nhoja].lengh; nfila++){
 			for(var ncol=0;ncol<60,ncol++){
-				document.getElementById('a_'+ nfila + '_' + ncol) =
+				sheet.getElementById('a_'+ nfila + '_' + ncol).innerHTML = sheets[nhoja][nfila,ncol]
 			}
 		}
 	}
+}
+
+setMatch = function(matchs){
+	//cambia el estilo de las coordenadas en cada hoja en donde existe una ocurrencia
 }
 
