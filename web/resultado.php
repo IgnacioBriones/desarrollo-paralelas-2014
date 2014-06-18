@@ -3,9 +3,36 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-
+<script src="./matriz en javascript.js"></script>
 <title>Computaci&oacute;n Paralela</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="./javascript/tools.js"></script>
+<script language="javascript">
+	var info 
+	$(document).ready(function() {
+		$("#ajax_loading").show();
+		$.ajax({
+        url: "json.php",
+        type: "POST",
+        
+        data: ({
+				nombre : <?php echo "'".$_FILES['archivo']['name']."'"; ?>,
+				frases : <?php echo "'".$_POST['frases']."'"; ?>,
+				tipo_ejecucion : <?php echo "'".$_POST['tipo_ejecucion']."'"; ?>,
+				tipo_busqueda : <?php echo "'".$_POST['tipo_busqueda']."'"; ?>,
+				NumeroProcesadores : <?php echo "'".$_POST['NumeroProcesadores']."'"; ?>,
+			  }),
+		success: function(data){
+					info = jQuery.parseJSON(data);
+					$("#ajax_loading").hide();
+					alert(data);
+					alert("Finalizado...");
+		},
+		});
+	});
+</script>
 
 </head>
 
@@ -15,18 +42,16 @@
     <div class="title">
       <h1>Computaci&oacute;n Paralela</h1>
       <br /> 
-      <h3>Proyecto final: "Procesamiento de Texto"</h3>
+      <h3>Proyecto final: "Código secreto de la Biblia"</h3>
     </div>
   </div>
   <div id="main">
     <div class="center">
 
 <h1>Resultado</h1>
-<br /> 
-<br />
-
+<img src="/images/ajax.gif" id="ajax_loading" width="100" />
 <div id="Resultado">
-	
+
 <?php
 
 if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_POST['tipo_busqueda']) && !empty($_POST['tipo_ejecucion'])){
@@ -41,77 +66,38 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 		$nombre = time()."_".$nombre;
 		
 		//cargando archivo
-		move_uploaded_file($nombre_tmp, "subidas/" . $nombre);
-		
-		
-		if($_POST['tipo_ejecucion'] == "Secuencial")
-		{
-			if($_POST['tipo_busqueda'] == "Explicita")
-			{
-				//Secuencial Explicito
-				$consulta_secuencial_explicita = "python /mpi/desarrollo-paralelas-2014/shellSerialExplicit.py"."  "."/mpi/desarrollo-paralelas-2014/web/subidas/".$nombre." '".$_POST['frases']."'";
-				$salida = shell_exec($consulta_secuencial_explicita);
-				echo $consulta_secuencial_explicita;
-				echo nl2br($salida);
-			}
-			else
-			{
-				//Secuencial Implicito
-				$consulta_secuencial_implicita = "python /mpi/desarrollo-paralelas-2014/shellSerialImplicit.py"."  "."/mpi/desarrollo-paralelas-2014/web/subidas/".$nombre;
-				$salida = shell_exec($consulta_secuencial_implicita);
-				echo $consulta_secuencial_implicita;
-				echo nl2br($salida);
-			}
-		}
-		else
-		{
-			if($_POST['tipo_busqueda'] == "Explicita")
-			{
-				//Paralelo Explicito
-				$consulta_paralela_explicita = "mpiexec "."-n ".$_POST['NumeroProcesadores']." --hostfile /mpi/desarrollo-paralelas-2014/hostfile"."python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py"." "."/mpi/desarrollo-paralelas-2014/web/subidas/".$nombre." '".$_POST['frases']."'";
-				$salida = shell_exec($consulta_paralela_explicita);
-				echo $consulta_paralela_explicita;
-				echo nl2br($salida);
-			}
-			else
-			{
-				//Paralelo Implicito
-				$consulta_paralela_implicita = "mpiexec "."-n ".$_POST['NumeroProcesadores']." --hostfile /mpi/desarrollo-paralelas-2014/hostfile"."python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py"." "."/mpi/desarrollo-paralelas-2014/web/subidas/".$nombre;
-				$salida = shell_exec($consulta_paralela_implicita);	
-				echo $consulta_paralela_implicita;
-				echo nl2br($salida);
-			}
-		}
-		
-    echo "<br /><br />";
+		move_uploaded_file($nombre_tmp, "subidas/" . $nombre);    
 }
-
 
 ?>
 
-
 <script>
-	var info = <?php echo $salida?>
+	// la informacion ya esta en la variable info
+	libro = info.sheets;
+	match = info.match;
+	
 </script>
-   </div> 
-    </div>
-   
+
+</div>
+</div>
     <div class="leftmenu">
       <div class="nav">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="curso.php">Curso</a></li>
-          <li><a href="herramientas.php">Herramientas</a></li>
-            </ul>
+           <li><a href="index.html">Inicio</a></li>
+           <li><a href="curso.php">Curso</a></li>
+           <li><a href="herramientas.php">Herramientas</a></li>
+        </ul>
       </div>
     </div>
-  </div>
- <div id="prefooter">
- </div>
-  <div id="footer">
-    <div class="padding"> Copyright Curso Computaci&oacute;n Paralela 2014 / Primer Semestre, UTEM </div>
-  </div>
 </div>
-</body>
+
+<div id="prefooter"></div>
+
+<div id="footer">
+    <div class="padding"> Copyright Curso Computaci&oacute;n Paralela 2014 / Primer Semestre, UTEM </div>
+</div>
+
+</div>
+
 </body>
 </html>
