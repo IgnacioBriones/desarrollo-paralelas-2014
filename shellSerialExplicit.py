@@ -33,7 +33,7 @@ match = [m for m in match if m['position'] != set([])]
 for m in match:
     m['position'] = list(m['position'])
 
-sheets = [str2matrix(text=sheet, ncol=60) for s in sheets]
+sheets = [str2matrix(text=sheet, ncol=60) for sheet in sheets]
 nhojas = [len(s) for s in sheets]
 bible = {'sheets':sheets, 'match':match, 'nhojas':nhojas}
 print json.dumps(bible)   
