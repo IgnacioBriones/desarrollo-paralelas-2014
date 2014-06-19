@@ -1,0 +1,612 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   3624  2048 ?        Ss   09:46   0:00 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    09:46   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    09:46   0:00 [ksoftirqd/0]
+root         4  0.0  0.0      0     0 ?        S    09:46   0:08 [kworker/0:0]
+root         5  0.0  0.0      0     0 ?        S<   09:46   0:00 [kworker/0:0H]
+root         7  0.0  0.0      0     0 ?        S    09:46   0:00 [migration/0]
+root         8  0.0  0.0      0     0 ?        S    09:46   0:00 [rcu_bh]
+root         9  0.0  0.0      0     0 ?        S    09:46   0:03 [rcu_sched]
+root        10  0.0  0.0      0     0 ?        S    09:46   0:00 [watchdog/0]
+root        11  0.0  0.0      0     0 ?        S    09:46   0:00 [watchdog/1]
+root        12  0.0  0.0      0     0 ?        S    09:46   0:00 [migration/1]
+root        13  0.0  0.0      0     0 ?        S    09:46   0:00 [ksoftirqd/1]
+root        15  0.0  0.0      0     0 ?        S<   09:46   0:00 [kworker/1:0H]
+root        16  0.0  0.0      0     0 ?        S    09:46   0:00 [watchdog/2]
+root        17  0.0  0.0      0     0 ?        S    09:46   0:00 [migration/2]
+root        18  0.0  0.0      0     0 ?        S    09:46   0:00 [ksoftirqd/2]
+root        20  0.0  0.0      0     0 ?        S<   09:46   0:00 [kworker/2:0H]
+root        21  0.0  0.0      0     0 ?        S    09:46   0:00 [watchdog/3]
+root        22  0.0  0.0      0     0 ?        S    09:46   0:00 [migration/3]
+root        23  0.0  0.0      0     0 ?        S    09:46   0:00 [ksoftirqd/3]
+root        25  0.0  0.0      0     0 ?        S<   09:46   0:00 [kworker/3:0H]
+root        26  0.0  0.0      0     0 ?        S    09:46   0:00 [watchdog/4]
+root        27  0.0  0.0      0     0 ?        S    09:46   0:00 [migration/4]
+root        28  0.0  0.0      0     0 ?        S    09:46   0:00 [ksoftirqd/4]
+root        30  0.0  0.0      0     0 ?        S<   09:46   0:00 [kworker/4:0H]
+root        31  0.0  0.0      0     0 ?        S    09:46   0:00 [watchdog/5]
+root        32  0.0  0.0      0     0 ?        S    09:46   0:00 [migration/5]
+root        33  0.0  0.0      0     0 ?        S    09:46   0:00 [ksoftirqd/5]
+root        34  0.0  0.0      0     0 ?        S    09:46   0:00 [kworker/5:0]
+root        35  0.0  0.0      0     0 ?        S<   09:46   0:00 [kworker/5:0H]
+root        36  0.0  0.0      0     0 ?        S    09:46   0:00 [watchdog/6]
+root        37  0.0  0.0      0     0 ?        S    09:46   0:00 [migration/6]
+root        38  0.0  0.0      0     0 ?        S    09:46   0:00 [ksoftirqd/6]
+root        39  0.0  0.0      0     0 ?        S    09:46   0:05 [kworker/6:0]
+root        40  0.0  0.0      0     0 ?        S<   09:46   0:00 [kworker/6:0H]
+root        41  0.0  0.0      0     0 ?        S    09:46   0:00 [watchdog/7]
+root        42  0.0  0.0      0     0 ?        S    09:46   0:00 [migration/7]
+root        43  0.0  0.0      0     0 ?        S    09:46   0:00 [ksoftirqd/7]
+root        44  0.0  0.0      0     0 ?        S    09:46   0:00 [kworker/7:0]
+root        45  0.0  0.0      0     0 ?        S<   09:46   0:00 [kworker/7:0H]
+root        46  0.0  0.0      0     0 ?        S<   09:46   0:00 [khelper]
+root        47  0.0  0.0      0     0 ?        S    09:46   0:00 [kdevtmpfs]
+root        48  0.0  0.0      0     0 ?        S<   09:46   0:00 [netns]
+root        49  0.0  0.0      0     0 ?        S<   09:46   0:00 [writeback]
+root        50  0.0  0.0      0     0 ?        S<   09:46   0:00 [kintegrityd]
+root        51  0.0  0.0      0     0 ?        S<   09:46   0:00 [bioset]
+root        52  0.0  0.0      0     0 ?        S<   09:46   0:00 [crypto]
+root        53  0.0  0.0      0     0 ?        S<   09:46   0:00 [kworker/u17:0]
+root        54  0.0  0.0      0     0 ?        S<   09:46   0:00 [kblockd]
+root        55  0.0  0.0      0     0 ?        S<   09:46   0:00 [ata_sff]
+root        56  0.0  0.0      0     0 ?        S    09:46   0:00 [khubd]
+root        57  0.0  0.0      0     0 ?        S<   09:46   0:00 [md]
+root        58  0.0  0.0      0     0 ?        S<   09:46   0:00 [devfreq_wq]
+root        61  0.0  0.0      0     0 ?        S    09:46   0:00 [khungtaskd]
+root        62  0.0  0.0      0     0 ?        S    09:46   0:00 [kswapd0]
+root        63  0.0  0.0      0     0 ?        SN   09:46   0:00 [ksmd]
+root        64  0.0  0.0      0     0 ?        SN   09:46   0:00 [khugepaged]
+root        65  0.0  0.0      0     0 ?        S    09:46   0:00 [fsnotify_mark]
+root        66  0.0  0.0      0     0 ?        S    09:46   0:00 [ecryptfs-kthrea]
+root        78  0.0  0.0      0     0 ?        S<   09:46   0:00 [kthrotld]
+root        84  0.0  0.0      0     0 ?        S    09:46   0:07 [kworker/1:1]
+root        85  0.0  0.0      0     0 ?        S    09:46   0:05 [kworker/7:1]
+root        86  0.0  0.0      0     0 ?        S<   09:46   0:00 [dm_bufio_cache]
+root       105  0.0  0.0      0     0 ?        S<   09:46   0:00 [deferwq]
+root       106  0.0  0.0      0     0 ?        S<   09:46   0:00 [charger_manager]
+root       108  0.0  0.0      0     0 ?        S    09:46   0:05 [kworker/5:1]
+root       287  0.0  0.0      0     0 ?        S    09:46   0:00 [scsi_eh_0]
+root       288  0.0  0.0      0     0 ?        S    09:46   0:00 [scsi_eh_1]
+root       289  0.0  0.0      0     0 ?        S    09:46   0:00 [scsi_eh_2]
+root       290  0.0  0.0      0     0 ?        S    09:46   0:00 [scsi_eh_3]
+root       291  0.0  0.0      0     0 ?        S    09:46   0:00 [scsi_eh_4]
+root       292  0.0  0.0      0     0 ?        S    09:46   0:00 [scsi_eh_5]
+root       315  0.0  0.0      0     0 ?        S    09:46   0:06 [kworker/4:1]
+root       317  0.0  0.0      0     0 ?        S    09:46   0:07 [kworker/2:1]
+root       318  0.0  0.0      0     0 ?        S<   09:46   0:00 [kworker/u17:1]
+root       319  0.0  0.0      0     0 ?        S    09:46   0:00 [jbd2/sda3-8]
+root       320  0.0  0.0      0     0 ?        S<   09:46   0:00 [ext4-rsv-conver]
+root       321  0.0  0.0      0     0 ?        S<   09:46   0:00 [ext4-unrsv-conv]
+root       413  0.0  0.0   2836   608 ?        S    09:46   0:00 upstart-udev-bridge --daemon
+root       415  0.0  0.0   3256  1504 ?        Ss   09:46   0:00 /sbin/udevd --daemon
+root       706  0.0  0.0      0     0 ?        S    09:46   0:00 [irq/43-mei_me]
+root       713  0.0  0.0      0     0 ?        S<   09:46   0:00 [kpsmoused]
+root       730  0.0  0.0      0     0 ?        S    09:46   0:00 [kworker/6:2]
+root       849  0.0  0.0      0     0 ?        S    09:46   0:00 [jbd2/sda1-8]
+root       850  0.0  0.0      0     0 ?        S<   09:46   0:00 [ext4-rsv-conver]
+root       851  0.0  0.0      0     0 ?        S<   09:46   0:00 [ext4-unrsv-conv]
+root       859  0.0  0.0   2848   368 ?        S    09:46   0:00 upstart-socket-bridge --daemon
+root       860  0.0  0.0      0     0 ?        S<   09:46   0:00 [hd-audio0]
+root       882  0.0  0.0   2700   988 ?        Ss   09:46   0:00 rpcbind -w
+root       916  0.0  0.0      0     0 ?        S    09:46   0:00 [kworker/1:2]
+root       929  0.0  0.0      0     0 ?        S    09:47   0:00 [jbd2/sda4-8]
+root       930  0.0  0.0      0     0 ?        S<   09:47   0:00 [ext4-rsv-conver]
+root       931  0.0  0.0      0     0 ?        S<   09:47   0:00 [ext4-unrsv-conv]
+root       957  0.0  0.0      0     0 ?        S<   09:47   0:00 [rpciod]
+root       971  0.0  0.0   6684  2416 ?        Ss   09:47   0:00 /usr/sbin/sshd -D
+root       972  0.0  0.0      0     0 ?        S<   09:47   0:00 [nfsiod]
+statd      985  0.0  0.0   2960  1256 ?        Ss   09:47   0:00 rpc.statd -L
+syslog     986  0.0  0.0  31064  1460 ?        Sl   09:47   0:00 rsyslogd -c5
+root       988  0.0  0.0   2912   396 ?        Ss   09:47   0:00 rpc.idmapd
+102       1038  0.0  0.0   4232  1948 ?        Ss   09:47   0:00 dbus-daemon --system --fork --activation=upstart
+root      1050  0.0  0.0   7232  2884 ?        Ss   09:47   0:00 /usr/sbin/modem-manager
+root      1071  0.0  0.0  11076  3560 ?        Ss   09:47   0:00 /usr/sbin/cupsd -F
+root      1084  0.0  0.0   4744  1608 ?        Ss   09:47   0:00 /usr/sbin/bluetoothd
+avahi     1099  0.0  0.0   3588  1708 ?        S    09:47   0:01 avahi-daemon: running [n1.local]
+avahi     1100  0.0  0.0   3456   436 ?        S    09:47   0:00 avahi-daemon: chroot helper
+root      1111  0.0  0.0      0     0 ?        S<   09:47   0:00 [krfcommd]
+root      1113  0.0  0.0   4632   864 tty4     Ss+  09:47   0:00 /sbin/getty -8 38400 tty4
+root      1120  0.0  0.0   4632   860 tty5     Ss+  09:47   0:00 /sbin/getty -8 38400 tty5
+root      1128  0.0  0.0   4632   852 tty2     Ss+  09:47   0:00 /sbin/getty -8 38400 tty2
+root      1142  0.0  0.0   4632   864 tty3     Ss+  09:47   0:00 /sbin/getty -8 38400 tty3
+root      1147  0.0  0.0   4632   856 tty6     Ss+  09:47   0:00 /sbin/getty -8 38400 tty6
+root      1153  0.0  0.0   2176   700 ?        Ss   09:47   0:00 acpid -c /etc/acpi/events -s /var/run/acpid.socket
+root      1158  0.0  0.0  42400  3436 ?        Sl   09:47   0:00 /usr/sbin/console-kit-daemon --no-daemon
+root      1160  0.0  0.0   2620   912 ?        Ss   09:47   0:00 cron
+daemon    1161  0.0  0.0   2472   348 ?        Ss   09:47   0:00 atd
+root      1180  0.0  0.0  35760  3760 ?        Ssl  09:47   0:00 lightdm
+root      1181  0.0  0.0   3604   664 ?        Ss   09:47   0:03 /usr/sbin/irqbalance
+root      1250  0.0  0.0      0     0 ?        S<   09:47   0:00 [nfsd4]
+root      1251  0.0  0.0      0     0 ?        S<   09:47   0:00 [nfsd4_callbacks]
+root      1252  0.0  0.0      0     0 ?        S    09:47   0:00 [lockd]
+root      1255  0.0  0.0      0     0 ?        S    09:47   0:00 [nfsd]
+root      1256  0.0  0.0      0     0 ?        S    09:47   0:00 [nfsd]
+root      1257  0.0  0.0      0     0 ?        S    09:47   0:02 [nfsd]
+root      1258  0.0  0.0      0     0 ?        S    09:47   0:00 [nfsd]
+root      1259  0.0  0.0      0     0 ?        S    09:47   0:00 [nfsd]
+root      1260  0.0  0.0      0     0 ?        S    09:47   0:00 [nfsd]
+root      1261  0.0  0.0      0     0 ?        S    09:47   0:01 [nfsd]
+root      1262  0.0  0.0      0     0 ?        S    09:47   0:00 [nfsd]
+root      1272  0.0  0.0  33920  5464 ?        Ssl  09:47   0:00 NetworkManager
+root      1290  0.0  0.0  26980  4368 ?        Sl   09:47   0:00 /usr/lib/policykit-1/polkitd --no-debug
+whoopsie  1291  0.0  0.0  26484  4728 ?        Ssl  09:47   0:01 whoopsie
+root      1292  0.0  0.0   3460  1508 ?        Ss   09:47   0:00 /usr/sbin/rpc.mountd --manage-gids
+root      1317  1.3  0.7 139996 61956 tty7     Ssl+ 09:47   7:20 /usr/bin/X :0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch -background none
+root      1370  0.0  0.0  34040  6972 ?        Ss   09:47   0:00 /usr/sbin/apache2 -k start
+www-data  1526  0.0  0.0  34764  6224 ?        S    09:47   0:00 /usr/sbin/apache2 -k start
+www-data  1528  0.0  0.0  34508  6128 ?        S    09:47   0:00 /usr/sbin/apache2 -k start
+www-data  1529  0.0  0.0  34632  5992 ?        S    09:47   0:00 /usr/sbin/apache2 -k start
+root      1536  0.0  0.0  78720  5416 ?        Ssl  09:47   0:09 /opt/teamviewer9/tv_bin/teamviewerd -f
+root      1539  0.0  0.0  17244  4048 ?        Sl   09:47   0:00 /usr/lib/accountsservice/accounts-daemon
+timidity  1541  0.0  0.0  17700  6712 ?        S    09:47   0:00 /usr/bin/timidity -Os -iAD
+root      1545  0.0  0.0   4632   852 tty1     Ss+  09:47   0:00 /sbin/getty -8 38400 tty1
+nobody    1550  0.0  0.0   6656  1540 ?        S    09:47   0:00 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/var/run/sendsigs.omit.d/network-manager.dnsmasq.pid --listen-address=127.0.0.1 --conf-file=/var/run/nm-dns-dnsmasq.conf --cache-size=0 --proxy-dnssec --enable-dbus --conf-dir=/etc/NetworkManager/dnsmasq.d
+root      1726  0.0  0.0  28424  3788 ?        Sl   09:47   0:00 /usr/lib/upower/upowerd
+colord    1837  0.0  0.1  54664 10924 ?        Sl   09:47   0:00 /usr/lib/i386-linux-gnu/colord/colord
+root      1851  0.0  0.0  17876  3788 ?        Sl   09:47   0:00 lightdm --session-child 12 19
+rtkit     1876  0.0  0.0  21336  1244 ?        SNl  09:47   0:00 /usr/lib/rtkit/rtkit-daemon
+root      1904  0.0  0.0      0     0 ?        S    09:47   0:00 [kworker/2:2]
+root      1906  0.0  0.0      0     0 ?        S    09:47   0:06 [kworker/3:2]
+cluster   1939  0.0  0.1  85664  9672 ?        Sl   09:47   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+cluster   1950  0.0  0.1  53608  9936 ?        Ssl  09:47   0:00 gnome-session --session=ubuntu
+cluster   1985  0.0  0.0   4080   208 ?        Ss   09:47   0:00 /usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session gnome-session --session=ubuntu
+cluster   1988  0.0  0.0   3940   488 ?        S    09:47   0:00 /usr/bin/dbus-launch --exit-with-session gnome-session --session=ubuntu
+cluster   1989  0.0  0.0   6596  3096 ?        Ss   09:47   0:13 //bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+cluster   1999  0.0  0.2 141512 16556 ?        Sl   09:47   0:06 /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+cluster   2005  0.0  0.0   9800  2324 ?        S    09:47   0:00 /usr/lib/gvfs/gvfsd
+cluster   2007  0.0  0.0  36080  3204 ?        Sl   09:47   0:00 /usr/lib/gvfs//gvfs-fuse-daemon -f /home/cluster/.gvfs
+cluster   2016  0.8  0.9 350688 78720 ?        Sl   09:47   4:38 compiz
+cluster   2025  0.0  0.0 166696  5580 ?        S<l  09:47   0:13 /usr/bin/pulseaudio --start --log-target=syslog
+cluster   2029  0.0  0.0  14108  2488 ?        S    09:47   0:00 /usr/lib/pulseaudio/pulse/gconf-helper
+cluster   2031  0.0  0.0  10964  3100 ?        S    09:47   0:00 /usr/lib/i386-linux-gnu/gconf/gconfd-2
+cluster   2033  0.1  0.4 174460 37388 ?        Sl   09:47   0:54 nautilus -n
+cluster   2034  0.0  0.1 113488 15148 ?        Sl   09:47   0:00 nm-applet
+cluster   2036  0.0  0.1  61056  8988 ?        Sl   09:47   0:00 /usr/lib/gnome-settings-daemon/gnome-fallback-mount-helper
+cluster   2039  0.0  0.1  42480  8540 ?        Sl   09:47   0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+cluster   2042  0.0  0.1  81172 11664 ?        Sl   09:47   0:00 bluetooth-applet
+cluster   2046  0.0  0.0  31344  4564 ?        S    09:47   0:00 /usr/lib/gvfs/gvfs-gdu-volume-monitor
+root      2050  0.0  0.0  25540  3808 ?        Sl   09:47   0:00 /usr/lib/udisks/udisks-daemon
+root      2053  0.0  0.0   6556   732 ?        S    09:47   0:00 udisks-daemon: not polling any devices
+cluster   2058  0.0  0.0  21708  2140 ?        Sl   09:47   0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+cluster   2061  0.0  0.0  10432  2132 ?        S    09:47   0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+cluster   2067  0.0  0.0  11676  3824 ?        S    09:47   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.4 /org/gtk/gvfs/exec_spaw/0
+cluster   2069  0.0  0.0   9804  2452 ?        S    09:47   0:00 /usr/lib/gvfs/gvfsd-burn --spawner :1.4 /org/gtk/gvfs/exec_spaw/1
+cluster   2076  0.0  0.1  79852 10968 ?        Sl   09:47   0:14 /usr/lib/bamf/bamfdaemon
+cluster   2090  0.0  0.0   9668  2116 ?        S    09:47   0:00 /usr/lib/gvfs/gvfsd-metadata
+cluster   2095  0.0  0.0   2236   528 ?        Ss   09:47   0:00 /bin/sh -c /usr/bin/compiz-decorator
+cluster   2096  0.0  0.1  44992 11460 ?        Sl   09:47   0:06 /usr/bin/gtk-window-decorator
+cluster   2102  0.1  0.3 103408 26264 ?        Sl   09:47   0:34 /usr/lib/unity/unity-panel-service
+cluster   2104  0.0  0.0  71488  7268 ?        Sl   09:47   0:22 /usr/lib/indicator-appmenu/hud-service
+cluster   2116  0.0  0.0  66900  6832 ?        Sl   09:47   0:00 /usr/lib/indicator-datetime/indicator-datetime-service
+cluster   2118  0.0  0.0 130212  6648 ?        Sl   09:47   0:00 /usr/lib/indicator-sound/indicator-sound-service
+cluster   2120  0.0  0.1  63548 10008 ?        Sl   09:47   0:00 /usr/lib/indicator-printers/indicator-printers-service
+cluster   2122  0.0  0.0  54388  4416 ?        Sl   09:47   0:00 /usr/lib/indicator-application/indicator-application-service
+cluster   2124  0.0  0.0  52636  6336 ?        Sl   09:47   0:00 /usr/lib/indicator-messages/indicator-messages-service
+cluster   2126  0.0  0.0  72356  6040 ?        Sl   09:47   0:00 /usr/lib/indicator-session/indicator-session-service
+cluster   2152  0.0  0.0   7980  2348 ?        S    09:47   0:00 /usr/lib/geoclue/geoclue-master
+cluster   2154  0.0  0.0  42460  5924 ?        Sl   09:47   0:00 /usr/lib/ubuntu-geoip/ubuntu-geoip-provider
+cluster   2174  0.0  0.1  44260  9120 ?        Sl   09:47   0:00 /usr/lib/gnome-disk-utility/gdu-notification-daemon
+cluster   2183  0.0  0.1  79868 11688 ?        Sl   09:47   0:00 /usr/lib/unity-lens-applications/unity-applications-daemon
+cluster   2185  0.0  0.0  94024  6328 ?        Sl   09:47   0:00 /usr/lib/unity-lens-files/unity-files-daemon
+cluster   2187  0.0  0.0  85512  7800 ?        Sl   09:47   0:00 /usr/lib/unity-lens-music/unity-music-daemon
+cluster   2189  0.0  0.1  72096 12684 ?        Sl   09:47   0:00 /usr/bin/python /usr/lib/unity-lens-video/unity-lens-video
+cluster   2211  0.0  0.0  46964  5860 ?        Sl   09:47   0:00 /usr/bin/zeitgeist-daemon
+cluster   2213  0.0  0.1  76184 10020 ?        Sl   09:47   0:00 telepathy-indicator
+cluster   2225  0.0  0.0  43308  6260 ?        Sl   09:47   0:00 /usr/lib/telepathy/mission-control-5
+cluster   2236  0.0  0.1  91364  9224 ?        Sl   09:47   0:00 /usr/lib/gnome-online-accounts/goa-daemon
+cluster   2238  0.0  0.0  33516  2432 ?        Sl   09:47   0:00 /usr/lib/dconf/dconf-service
+cluster   2247  0.0  0.1  57312 13996 ?        Sl   09:47   0:00 /usr/lib/zeitgeist/zeitgeist-fts
+cluster   2249  0.0  0.0  56044  6240 ?        Sl   09:47   0:00 zeitgeist-datahub
+cluster   2256  0.0  0.0   5448   284 ?        S    09:47   0:00 /bin/cat
+cluster   2264  0.0  0.0  80952  3740 ?        Sl   09:47   0:00 /usr/lib/unity-lens-music/unity-musicstore-daemon
+cluster   2280  0.0  0.1  42780  8864 ?        Sl   09:47   0:00 gnome-screensaver
+cluster   2288  0.0  0.2  97068 16464 ?        Sl   09:47   0:00 /usr/bin/python /usr/lib/unity-scope-video-remote/unity-scope-video-remote
+cluster   2308  5.2  8.4 1352932 685932 ?      Sl   09:48  27:43 /usr/lib/firefox/firefox
+cluster   2326  0.0  0.0  37172  3628 ?        Sl   09:48   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+cluster   2379  0.0  0.1  54604 12588 ?        Sl   09:48   0:00 update-notifier
+www-data  2383  0.0  0.0  34632  6004 ?        S    09:48   0:00 /usr/sbin/apache2 -k start
+www-data  2388  0.0  0.0  34764  6204 ?        S    09:48   0:00 /usr/sbin/apache2 -k start
+www-data  2389  0.0  0.0  34764  6136 ?        S    09:48   0:00 /usr/sbin/apache2 -k start
+www-data  2390  0.0  0.0  34764  6108 ?        S    09:48   0:00 /usr/sbin/apache2 -k start
+www-data  2391  0.0  0.0  34764  6144 ?        S    09:48   0:00 /usr/sbin/apache2 -k start
+cluster   2452  0.0  0.0  36736  4012 ?        Sl   09:49   0:00 /usr/lib/deja-dup/deja-dup/deja-dup-monitor
+root      2671  0.0  0.0   3252   820 ?        S    18:04   0:00 /sbin/udevd --daemon
+root      2672  0.0  0.0   3252   820 ?        S    18:04   0:00 /sbin/udevd --daemon
+root      2689  0.0  0.0      0     0 ?        S    18:04   0:00 [kworker/3:1]
+lp        2866  0.0  0.0   6228  1376 ?        S    09:56   0:00 /usr/lib/cups/notifier/dbus dbus:// 
+root      3078  0.0  0.1  17988  9152 ?        S    10:06   0:00 /usr/bin/python /usr/lib/system-service/system-service-d
+cluster   3607  0.2  0.3 295180 30760 ?        Sl   10:39   1:09 /usr/lib/firefox/plugin-container /usr/lib/flashplugin-installer/libflashplayer.so -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 2308 true plugin
+www-data  6256  0.0  0.0   2236   540 ?        S    13:37   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/ 'plan'
+root      6257  0.0  0.0   3772  1624 ?        S    13:37   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/ plan
+cluster   6259  0.0  0.0   3784  2116 ?        S    13:37   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/ plan
+cluster   6260  0.0  0.2 103804 17524 ?        S    13:37   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/ plan
+cluster   6261  9.8  0.1  99364 14396 ?        R    13:37  29:38 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/ plan
+cluster   6262  9.8  0.1  99360 14388 ?        R    13:37  29:41 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/ plan
+cluster   6263  9.7  0.1  99364 14396 ?        R    13:37  29:28 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/ plan
+www-data  6282  0.0  0.0  34632  5864 ?        S    13:37   0:00 /usr/sbin/apache2 -k start
+www-data  6288  0.0  0.0   2236   544 ?        S    13:37   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/ 'plan'
+root      6289  0.0  0.0   3772  1624 ?        S    13:37   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/ plan
+cluster   6290  0.0  0.0   3784  2116 ?        S    13:37   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/ plan
+cluster   6291  0.0  0.2 103768 17524 ?        S    13:37   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/ plan
+cluster   6292  9.8  0.1  99316 14404 ?        R    13:37  29:38 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/ plan
+cluster   6293  9.7  0.1  99316 14408 ?        R    13:37  29:16 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/ plan
+cluster   6294  9.8  0.1  99312 14396 ?        R    13:37  29:37 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/ plan
+www-data  6332  0.0  0.0   2236   544 ?        S    13:39   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      6333  0.0  0.0   3772  1628 ?        S    13:39   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6334  0.0  0.0   3784  2116 ?        S    13:39   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6335  0.0  0.2 103760 17516 ?        S    13:39   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6336  9.1  0.1  99316 14400 ?        R    13:39  27:20 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6337  9.1  0.1  99316 14400 ?        R    13:39  27:30 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6338  9.2  0.1  99320 14400 ?        R    13:39  27:43 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  6374  0.0  0.0   2236   548 ?        S    13:40   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      6375  0.0  0.0   3772  1628 ?        S    13:40   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6376  0.0  0.0   3784  2120 ?        S    13:40   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6377  0.0  0.2 103764 17512 ?        S    13:40   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6378  9.1  0.1  99312 14400 ?        R    13:40  27:13 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6379  9.0  0.1  99312 14400 ?        R    13:40  26:54 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6380  8.9  0.1  99324 14400 ?        R    13:40  26:45 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  6406  0.0  0.0  34632  5848 ?        S    13:40   0:00 /usr/sbin/apache2 -k start
+www-data  6410  0.0  0.0  34632  5856 ?        S    13:40   0:00 /usr/sbin/apache2 -k start
+www-data  6451  0.0  0.0   2236   544 ?        S    13:44   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      6452  0.0  0.0   3772  1632 ?        S    13:44   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6453  0.0  0.0   3784  2116 ?        S    13:44   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6454  0.0  0.2 103764 17512 ?        S    13:44   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6455  8.2  0.1  99316 14408 ?        R    13:44  24:13 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6456  8.2  0.1  99320 14400 ?        R    13:44  24:19 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6457  8.1  0.1  99312 14396 ?        R    13:44  23:59 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  6537  0.0  0.0   2236   544 ?        S    13:49   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113752_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      6539  0.0  0.0   3772  1628 ?        S    13:49   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113752_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6540  0.0  0.0   3784  2116 ?        S    13:49   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113752_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6541  0.0  0.2 103768 17512 ?        S    13:49   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113752_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6542  7.4  0.1  99320 14404 ?        R    13:49  21:40 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113752_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6543  7.4  0.1  99316 14396 ?        R    13:49  21:31 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113752_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6544  7.5  0.1  99316 14400 ?        R    13:49  21:59 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113752_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  6545  0.0  0.0  34632  5844 ?        S    13:49   0:00 /usr/sbin/apache2 -k start
+www-data  6547  0.0  0.0  34632  5844 ?        S    13:49   0:00 /usr/sbin/apache2 -k start
+www-data  6548  0.0  0.0  34632  5908 ?        S    13:49   0:00 /usr/sbin/apache2 -k start
+www-data  6568  0.0  0.0   2236   544 ?        S    13:49   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113782_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      6569  0.0  0.0   3772  1628 ?        S    13:49   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113782_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6570  0.0  0.0   3784  2116 ?        S    13:49   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113782_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6571  0.0  0.2 103768 17532 ?        S    13:49   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113782_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6572  7.4  0.1  99312 14400 ?        R    13:49  21:30 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113782_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6573  7.4  0.1  99312 14396 ?        R    13:49  21:33 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113782_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6574  7.5  0.1  99316 14400 ?        R    13:49  21:47 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113782_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  6597  0.0  0.0   2236   544 ?        S    13:49   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113785_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      6598  0.0  0.0   3772  1624 ?        S    13:49   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113785_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6599  0.0  0.0   3784  2112 ?        S    13:49   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113785_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6600  0.0  0.2 103768 17536 ?        S    13:49   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113785_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6601  7.4  0.1  99316 14400 ?        R    13:49  21:35 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113785_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6602  7.5  0.1  99316 14404 ?        R    13:49  21:47 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113785_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6603  7.4  0.1  99316 14400 ?        R    13:49  21:32 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113785_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  6622  0.0  0.0   2236   548 ?        S    13:49   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113787_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      6623  0.0  0.0   3772  1628 ?        S    13:49   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113787_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6624  0.0  0.0   3784  2112 ?        S    13:49   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113787_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6625  0.0  0.2 103768 17512 ?        S    13:49   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113787_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6626  7.3  0.1  99320 14408 ?        R    13:49  21:21 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113787_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6627  7.4  0.1  99316 14400 ?        R    13:49  21:30 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113787_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6628  7.5  0.1  99316 14396 ?        R    13:49  21:42 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113787_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  6655  0.0  0.0  34632  5848 ?        S    13:49   0:00 /usr/sbin/apache2 -k start
+www-data  6656  0.0  0.0   2236   544 ?        S    13:49   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113795_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      6657  0.0  0.0   3772  1632 ?        S    13:49   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113795_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6658  0.0  0.0   3784  2120 ?        S    13:49   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113795_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6659  0.0  0.2 103760 17528 ?        S    13:49   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113795_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6660  7.4  0.1  99316 14404 ?        R    13:49  21:32 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113795_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6661  7.5  0.1  99320 14404 ?        R    13:49  21:52 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113795_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6662  7.3  0.1  99316 14400 ?        R    13:49  21:22 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113795_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  6683  0.0  0.0   2236   544 ?        S    13:49   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113799_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      6684  0.0  0.0   3772  1632 ?        S    13:49   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113799_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6685  0.0  0.0   3784  2116 ?        S    13:49   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113799_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6687  0.0  0.2 103764 17524 ?        S    13:49   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113799_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6688  7.3  0.1  99316 14404 ?        R    13:49  21:11 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113799_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6689  7.5  0.1  99312 14396 ?        R    13:49  21:43 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113799_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6690  7.4  0.1  99320 14404 ?        R    13:49  21:30 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113799_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  6705  0.0  0.0  34632  5844 ?        S    13:50   0:00 /usr/sbin/apache2 -k start
+www-data  6714  0.0  0.0  34632  5852 ?        S    13:50   0:00 /usr/sbin/apache2 -k start
+www-data  6715  0.0  0.0  34632  5848 ?        S    13:50   0:00 /usr/sbin/apache2 -k start
+www-data  6716  0.0  0.0  34632  5844 ?        S    13:50   0:00 /usr/sbin/apache2 -k start
+www-data  6717  0.0  0.0  34632  5844 ?        S    13:50   0:00 /usr/sbin/apache2 -k start
+www-data  6718  0.0  0.0   2236   544 ?        S    13:50   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113826_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      6719  0.0  0.0   3772  1628 ?        S    13:50   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113826_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6720  0.0  0.0   3784  2116 ?        S    13:50   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113826_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6721  0.0  0.2 103760 17524 ?        S    13:50   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113826_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6722  7.3  0.1  99320 14404 ?        R    13:50  21:08 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113826_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6723  7.2  0.1  99312 14396 ?        R    13:50  20:59 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113826_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6724  7.4  0.1  99320 14404 ?        R    13:50  21:22 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113826_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  6741  0.0  0.0   2236   544 ?        S    13:50   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113829_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      6742  0.0  0.0   3772  1632 ?        S    13:50   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113829_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6743  0.0  0.0   3784  2112 ?        S    13:50   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113829_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6744  0.0  0.2 103760 17528 ?        S    13:50   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113829_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6745  7.3  0.1  99312 14400 ?        R    13:50  21:17 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113829_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6746  7.3  0.1  99312 14400 ?        R    13:50  21:14 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113829_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6747  7.3  0.1  99316 14400 ?        R    13:50  21:12 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113829_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  6764  0.0  0.0   2236   540 ?        S    13:50   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113831_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      6765  0.0  0.0   3772  1628 ?        S    13:50   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113831_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6766  0.0  0.0   3784  2116 ?        S    13:50   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113831_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6767  0.0  0.2 103768 17532 ?        S    13:50   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113831_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6768  7.3  0.1  99320 14404 ?        R    13:50  21:21 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113831_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6769  7.4  0.1  99316 14396 ?        R    13:50  21:31 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113831_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6770  7.3  0.1  99316 14404 ?        R    13:50  21:10 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113831_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  6771  0.0  0.0  34632  5908 ?        S    13:50   0:00 /usr/sbin/apache2 -k start
+www-data  6839  0.0  0.0  34632  5924 ?        S    13:51   0:00 /usr/sbin/apache2 -k start
+www-data  6840  0.0  0.0  34632  5848 ?        S    13:51   0:00 /usr/sbin/apache2 -k start
+www-data  6841  0.0  0.0  34632  5844 ?        S    13:51   0:00 /usr/sbin/apache2 -k start
+root      6844  0.0  0.0      0     0 ?        S    18:23   0:00 [kworker/0:1]
+www-data  6866  0.0  0.0   2236   548 ?        S    13:51   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113896_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      6867  0.0  0.0   3772  1632 ?        S    13:51   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113896_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6868  0.0  0.0   3784  2116 ?        S    13:51   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113896_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6869  0.0  0.2 103764 17528 ?        S    13:51   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113896_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6870  7.3  0.1  99316 14404 ?        R    13:51  21:15 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113896_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6871  7.4  0.1  99320 14404 ?        R    13:51  21:21 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113896_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6872  7.4  0.1  99316 14400 ?        R    13:51  21:18 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113896_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  6889  0.0  0.0   2236   544 ?        S    13:51   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113908_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      6890  0.0  0.0   3772  1628 ?        S    13:51   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113908_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6891  0.0  0.0   3784  2112 ?        S    13:51   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113908_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6892  0.0  0.2 103760 17508 ?        S    13:51   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113908_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6893  7.2  0.1  99320 14408 ?        R    13:51  20:56 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113908_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6894  7.4  0.1  99316 14400 ?        R    13:51  21:18 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113908_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6895  7.4  0.1  99316 14400 ?        R    13:51  21:22 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113908_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  6896  0.0  0.0  34632  5912 ?        S    13:51   0:00 /usr/sbin/apache2 -k start
+www-data  6913  0.0  0.0   2236   548 ?        S    13:51   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113911_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      6914  0.0  0.0   3772  1632 ?        S    13:51   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113911_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6915  0.0  0.0   3784  2116 ?        S    13:51   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113911_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6916  0.0  0.2 103768 17536 ?        S    13:51   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113911_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6917  7.3  0.1  99320 14404 ?        R    13:51  21:08 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113911_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6918  7.3  0.1  99320 14400 ?        R    13:51  21:01 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113911_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6919  7.3  0.1  99316 14396 ?        R    13:51  21:03 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403113911_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   6948  0.0  0.1  93920 15748 ?        Sl   18:24   0:00 gnome-terminal
+cluster   6954  0.0  0.0   2404   716 ?        S    18:24   0:00 gnome-pty-helper
+cluster   6955  0.0  0.0   9268  4324 pts/189  Ss   18:24   0:00 bash
+www-data  7011  0.0  0.0  34632  5848 ?        S    13:52   0:00 /usr/sbin/apache2 -k start
+www-data  7104  0.0  0.0   2236   544 ?        S    13:54   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114059_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      7105  0.0  0.0   3772  1632 ?        S    13:54   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114059_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7106  0.0  0.0   3784  2112 ?        S    13:54   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114059_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7107  0.0  0.2 103768 17532 ?        S    13:54   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114059_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7108  7.4  0.1  99320 14400 ?        R    13:54  21:05 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114059_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7109  7.3  0.1  99316 14396 ?        R    13:54  21:04 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114059_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7110  7.3  0.1  99316 14404 ?        R    13:54  20:53 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114059_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  7133  0.0  0.0   2236   544 ?        S    13:54   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114088_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      7134  0.0  0.0   3772  1632 ?        S    13:54   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114088_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7135  0.0  0.0   3784  2116 ?        S    13:54   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114088_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7136  0.0  0.2 103768 17528 ?        S    13:54   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114088_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7137  7.2  0.1  99312 14400 ?        R    13:54  20:45 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114088_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7138  7.3  0.1  99316 14400 ?        R    13:54  20:46 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114088_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7139  7.1  0.1  99316 14404 ?        R    13:54  20:27 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114088_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  7166  0.0  0.0   2236   544 ?        S    13:56   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114168_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      7167  0.0  0.0   3772  1632 ?        S    13:56   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114168_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7168  0.0  0.0   3784  2116 ?        S    13:56   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114168_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7169  0.0  0.2 103764 17532 ?        S    13:56   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114168_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7170  7.1  0.1  99320 14400 ?        R    13:56  20:17 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114168_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7171  7.1  0.1  99320 14408 ?        R    13:56  20:14 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114168_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7172  7.2  0.1  99316 14400 ?        R    13:56  20:26 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114168_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  7175  0.0  0.0  34632  5932 ?        S    13:56   0:00 /usr/sbin/apache2 -k start
+www-data  7196  0.0  0.0   2236   544 ?        S    13:56   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114179_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      7197  0.0  0.0   3772  1628 ?        S    13:56   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114179_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7198  0.0  0.0   3784  2120 ?        S    13:56   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114179_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7199  0.0  0.2 103768 17532 ?        S    13:56   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114179_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7200  7.2  0.1  99316 14404 ?        R    13:56  20:34 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114179_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7201  7.2  0.1  99316 14400 ?        R    13:56  20:34 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114179_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7202  7.2  0.1  99316 14400 ?        R    13:56  20:38 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114179_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  7232  0.0  0.0  34632  5908 ?        S    13:57   0:00 /usr/sbin/apache2 -k start
+www-data  7315  0.0  0.0   2236   548 ?        S    14:00   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114421_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      7316  0.0  0.0   3772  1628 ?        S    14:00   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114421_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7317  0.0  0.0   3784  2112 ?        S    14:00   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114421_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7318  0.0  0.2 103760 17528 ?        S    14:00   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114421_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7319  7.1  0.1  99320 14404 ?        R    14:00  19:52 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114421_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7320  7.0  0.1  99320 14400 ?        R    14:00  19:47 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114421_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7321  7.0  0.1  99316 14400 ?        R    14:00  19:37 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114421_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  7324  0.0  0.0  34632  5848 ?        S    14:00   0:00 /usr/sbin/apache2 -k start
+www-data  7326  0.0  0.0  34632  5872 ?        S    14:00   0:00 /usr/sbin/apache2 -k start
+www-data  7327  0.0  0.0  34632  5840 ?        S    14:00   0:00 /usr/sbin/apache2 -k start
+www-data  7347  0.0  0.0   2236   544 ?        S    14:00   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114441_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      7348  0.0  0.0   3772  1628 ?        S    14:00   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114441_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7349  0.0  0.0   3784  2112 ?        S    14:00   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114441_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7350  0.0  0.2 103764 17532 ?        S    14:00   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114441_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7351  7.0  0.1  99316 14404 ?        R    14:00  19:34 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114441_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7352  7.1  0.1  99320 14400 ?        R    14:00  20:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114441_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7353  7.1  0.1  99312 14396 ?        R    14:00  19:54 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114441_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  7377  0.0  0.0   2236   544 ?        S    14:01   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114466_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      7378  0.0  0.0   3772  1628 ?        S    14:01   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114466_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7379  0.0  0.0   3784  2116 ?        S    14:01   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114466_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7380  0.0  0.2 103764 17532 ?        S    14:01   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114466_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7381  7.0  0.1  99320 14408 ?        R    14:01  19:40 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114466_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7382  7.0  0.1  99316 14400 ?        R    14:01  19:32 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114466_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7383  7.2  0.1  99312 14396 ?        R    14:01  20:02 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114466_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  7408  0.0  0.0   2236   544 ?        S    14:01   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114498_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      7409  0.0  0.0   3772  1628 ?        S    14:01   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114498_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7410  0.0  0.0   3784  2120 ?        S    14:01   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114498_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7411  0.0  0.2 103760 17528 ?        S    14:01   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114498_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7412  7.1  0.1  99312 14396 ?        R    14:01  19:55 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114498_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7413  7.2  0.1  99320 14404 ?        R    14:01  20:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114498_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7414  7.1  0.1  99312 14396 ?        R    14:01  19:51 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114498_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  7475  0.0  0.0   2236   544 ?        S    14:01   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114515_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      7476  0.0  0.0   3772  1628 ?        S    14:01   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114515_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7477  0.0  0.0   3784  2112 ?        S    14:01   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114515_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7478  0.0  0.2 103768 17528 ?        S    14:01   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114515_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  7479  0.0  0.0  34632  5916 ?        S    14:01   0:00 /usr/sbin/apache2 -k start
+cluster   7480  7.1  0.1  99316 14404 ?        R    14:01  19:48 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114515_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7481  7.0  0.1  99316 14400 ?        R    14:01  19:31 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114515_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7482  7.0  0.1  99316 14404 ?        R    14:01  19:34 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114515_InformePlanificacionLab2ComputacionParalela.pdf plan
+root      7489  0.0  0.0      0     0 ?        S    18:27   0:00 [kworker/u16:1]
+www-data  7494  0.0  0.0  34632  5908 ?        S    14:01   0:00 /usr/sbin/apache2 -k start
+www-data  7495  0.0  0.0  34632  5844 ?        S    14:01   0:00 /usr/sbin/apache2 -k start
+www-data  7496  0.0  0.0  34632  5936 ?        S    14:01   0:00 /usr/sbin/apache2 -k start
+www-data  7497  0.0  0.0  34632  5872 ?        S    14:01   0:00 /usr/sbin/apache2 -k start
+www-data  7547  0.0  0.0   2236   540 ?        S    14:02   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114559_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      7548  0.0  0.0   3772  1628 ?        S    14:02   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114559_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7549  0.0  0.0   3784  2116 ?        S    14:02   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114559_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7550  0.0  0.2 103760 17528 ?        S    14:02   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114559_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7551  7.0  0.1  99312 14396 ?        R    14:02  19:34 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114559_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7552  7.1  0.1  99312 14400 ?        R    14:02  19:53 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114559_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7553  7.1  0.1  99316 14400 ?        R    14:02  19:39 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114559_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  7672  0.0  0.0  34764  6088 ?        S    14:08   0:00 /usr/sbin/apache2 -k start
+www-data  7706  0.0  0.0   2236   544 ?        S    14:09   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114979_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      7707  0.0  0.0   3772  1628 ?        S    14:09   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114979_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7708  0.0  0.0   3784  2116 ?        S    14:09   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114979_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7709  0.0  0.2 103764 17532 ?        S    14:09   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114979_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7710  7.0  0.1  99312 14396 ?        R    14:09  19:07 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114979_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7711  7.0  0.1  99320 14404 ?        R    14:09  18:54 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114979_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7712  7.0  0.1  99312 14396 ?        R    14:09  18:56 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403114979_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  7736  0.0  0.0   2236   540 ?        S    14:10   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115002_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      7737  0.0  0.0   3772  1628 ?        S    14:10   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115002_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7738  0.0  0.0   3784  2112 ?        S    14:10   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115002_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7739  0.0  0.2 103768 17536 ?        S    14:10   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115002_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7740  7.0  0.1  99316 14404 ?        R    14:10  19:01 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115002_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7741  7.0  0.1  99316 14400 ?        R    14:10  18:55 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115002_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7742  7.0  0.1  99316 14400 ?        R    14:10  19:04 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115002_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  7904  0.0  0.0   2236   548 ?        S    14:19   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115598_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      7905  0.0  0.0   3772  1628 ?        S    14:19   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115598_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7906  0.0  0.0   3784  2120 ?        S    14:19   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115598_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7907  0.0  0.2 103764 17532 ?        S    14:19   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115598_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7910  6.9  0.1  99312 14396 ?        R    14:19  17:54 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115598_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7911  6.9  0.1  99312 14400 ?        R    14:19  18:01 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115598_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7912  6.9  0.1  99312 14396 ?        R    14:19  17:56 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115598_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  7972  0.0  0.0   2236   544 ?        S    14:20   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115638_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      7973  0.0  0.0   3772  1628 ?        S    14:20   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115638_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7974  0.0  0.0   3784  2120 ?        S    14:20   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115638_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7975  0.0  0.2 103764 17532 ?        S    14:20   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115638_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7976  6.9  0.1  99316 14404 ?        R    14:20  17:53 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115638_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7977  7.0  0.1  99316 14400 ?        R    14:20  18:18 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115638_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   7978  6.8  0.1  99324 14400 ?        R    14:20  17:49 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115638_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  8001  0.0  0.0   2236   544 ?        S    14:21   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115665_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      8002  0.0  0.0   3772  1632 ?        S    14:21   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115665_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8004  0.0  0.0   3784  2116 ?        S    14:21   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115665_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8007  0.0  0.2 103764 17528 ?        S    14:21   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115665_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8008  6.9  0.1  99316 14404 ?        R    14:21  17:57 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115665_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8010  6.9  0.1  99316 14400 ?        R    14:21  17:55 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115665_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8011  6.9  0.1  99316 14404 ?        R    14:21  17:54 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403115665_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  8016  0.0  0.0  34632  5840 ?        S    14:21   0:00 /usr/sbin/apache2 -k start
+www-data  8017  0.0  0.0  34632  5936 ?        S    14:21   0:00 /usr/sbin/apache2 -k start
+www-data  8018  0.0  0.0  34632  5932 ?        S    14:21   0:00 /usr/sbin/apache2 -k start
+www-data  8123  0.0  0.0   2236   544 ?        S    14:30   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116240_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      8124  0.0  0.0   3772  1628 ?        S    14:30   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116240_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8125  0.0  0.0   3784  2112 ?        S    14:30   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116240_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8127  0.0  0.2 103760 17524 ?        S    14:30   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116240_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8129  6.9  0.1  99312 14404 ?        R    14:30  17:16 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116240_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8130  6.8  0.1  99316 14400 ?        R    14:30  16:59 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116240_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8131  6.9  0.1  99316 14400 ?        R    14:30  17:09 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116240_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  8152  0.0  0.0   2236   544 ?        S    14:31   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116293_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      8153  0.0  0.0   3772  1628 ?        S    14:31   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116293_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8154  0.0  0.0   3784  2116 ?        S    14:31   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116293_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8155  0.0  0.2 103760 17528 ?        S    14:31   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116293_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  8156  0.0  0.0  34352  5308 ?        S    14:31   0:00 /usr/sbin/apache2 -k start
+cluster   8157  7.0  0.1  99312 14396 ?        R    14:31  17:27 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116293_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8158  6.8  0.1  99320 14408 ?        R    14:31  16:56 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116293_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8159  6.8  0.1  99312 14396 ?        R    14:31  16:56 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116293_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  8163  0.0  0.0  34632  5916 ?        S    14:31   0:00 /usr/sbin/apache2 -k start
+www-data  8164  0.0  0.0  34632  5924 ?        S    14:31   0:00 /usr/sbin/apache2 -k start
+www-data  8203  0.0  0.0  34632  5840 ?        S    14:32   0:00 /usr/sbin/apache2 -k start
+www-data  8277  0.0  0.0   2236   544 ?        S    14:34   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116484_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      8278  0.0  0.0   3772  1632 ?        S    14:34   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116484_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8279  0.0  0.0   3784  2116 ?        S    14:34   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116484_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8280  0.0  0.2 103764 17528 ?        S    14:34   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116484_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8281  6.9  0.1  99316 14400 ?        R    14:34  17:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116484_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8282  6.8  0.1  99316 14404 ?        R    14:34  16:48 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116484_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8283  6.9  0.1  99320 14400 ?        R    14:34  17:02 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116484_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  8318  0.0  0.0  34632  5840 ?        S    14:35   0:00 /usr/sbin/apache2 -k start
+www-data  8324  0.0  0.0   2236   544 ?        S    18:32   0:00 sh -c sudo -u cluster mpiexec -n 60 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403130751_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      8325  0.0  0.0   3772  1628 ?        S    18:32   0:00 sudo -u cluster mpiexec -n 60 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403130751_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8326  0.0  0.0   3784  2148 ?        S    18:32   0:00 mpiexec -n 60 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403130751_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8341  0.0  0.2 103856 17580 ?        S    18:32   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403130751_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8342  5.2  0.1  99412 14472 ?        R    18:32   0:20 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403130751_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8343  5.3  0.1  99404 14472 ?        R    18:32   0:21 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403130751_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8344  5.2  0.1  99408 14468 ?        R    18:32   0:21 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403130751_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  8390  0.0  0.0   2236   548 ?        S    14:36   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116570_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root      8391  0.0  0.0   3772  1628 ?        S    14:36   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116570_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8392  0.0  0.0   3784  2120 ?        S    14:36   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116570_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8393  0.0  0.2 103764 17528 ?        S    14:36   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116570_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8394  6.9  0.1  99316 14400 ?        R    14:36  16:46 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116570_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8395  6.7  0.1  99324 14404 ?        R    14:36  16:19 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116570_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster   8396  6.9  0.1  99316 14404 ?        R    14:36  16:58 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403116570_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data  8455  0.0  0.0  34632  5852 ?        S    14:36   0:00 /usr/sbin/apache2 -k start
+cluster   8643  2.0  4.7 1114936 387616 ?      Sl   15:49   3:30 /home/cluster/Aptana_Studio_3/AptanaStudio3
+cluster   8692  0.0  0.1  64956 14252 ?        Sl   15:50   0:00 /usr/bin/python2.7 -u /home/cluster/Aptana_Studio_3/plugins/org.python.pydev_2.7.0.2013032300/pysrc/pycompletionserver.py 53230 32992
+cluster   8757  0.0  0.0   2400   712 ?        S    15:50   0:00 /home/cluster/Aptana_Studio_3/plugins/com.aptana.terminal_3.0.0.1350942659/os/linux/x86/redtty /bin/bash bash --rcfile /home/cluster/Aptana_Studio_3/configuration/org.eclipse.osgi/bundles/11/1/.cp/os/linux/.aptanarc -i 120x40
+cluster   8758  0.0  0.0  12340  7172 pts/148  Ss+  15:50   0:00 bash --rcfile /home/cluster/Aptana_Studio_3/configuration/org.eclipse.osgi/bundles/11/1/.cp/os/linux/.aptanarc -i
+cluster   8940  0.0  0.0   3756  1948 ?        Ss   15:50   0:00 orted --hnp --set-sid --report-uri 10 --singleton-died-pipe 11
+root      9141  0.0  0.0      0     0 ?        S    18:38   0:00 [kworker/u16:0]
+cluster   9267  0.0  0.0   6164  1160 pts/189  R+   18:39   0:00 ps aux
+cluster   9268  0.0  0.0   5836   900 pts/189  S+   18:39   0:00 less
+root      9790  0.0  0.0      0     0 ?        S    17:15   0:00 [kworker/4:2]
+www-data 11891  0.0  0.0   2236   548 ?        S    17:29   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403126958_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root     11892  0.0  0.0   3772  1624 ?        S    17:29   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403126958_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  11893  0.0  0.0   3784  2120 ?        S    17:29   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403126958_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  11894  0.0  0.2 103764 17528 ?        S    17:29   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403126958_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  11895  5.7  0.1  99312 14400 ?        R    17:29   3:59 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403126958_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data 11896  0.0  0.0  34508  5564 ?        S    17:29   0:00 /usr/sbin/apache2 -k start
+cluster  11897  5.7  0.1  99316 14408 ?        R    17:29   3:59 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403126958_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  11898  5.8  0.1  99316 14400 ?        R    17:29   4:03 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403126958_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data 11949  0.0  0.0   2236   544 ?        S    17:29   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403126970_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root     11950  0.0  0.0   3772  1632 ?        S    17:29   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403126970_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  11951  0.0  0.0   3784  2120 ?        S    17:29   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403126970_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  11952  0.0  0.2 103764 17532 ?        S    17:29   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403126970_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  11953  5.7  0.1  99312 14400 ?        R    17:29   3:59 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403126970_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  11954  5.6  0.1  99324 14400 ?        R    17:29   3:56 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403126970_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  11955  5.6  0.1  99312 14396 ?        R    17:29   3:58 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403126970_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data 12191  0.0  0.0   2236   544 ?        S    17:30   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127051_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root     12192  0.0  0.0   3772  1628 ?        S    17:30   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127051_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12193  0.0  0.0   3784  2116 ?        S    17:30   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127051_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12194  0.0  0.2 103764 17512 ?        S    17:30   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127051_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12195  5.8  0.1  99324 14408 ?        R    17:30   4:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127051_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12196  5.6  0.1  99316 14400 ?        R    17:30   3:52 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127051_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12197  5.7  0.1  99320 14400 ?        R    17:30   3:55 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127051_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data 12230  0.0  0.0   2236   544 ?        S    17:30   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127055_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root     12231  0.0  0.0   3772  1628 ?        S    17:30   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127055_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12232  0.0  0.0   3784  2120 ?        S    17:30   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127055_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12233  0.0  0.2 103768 17520 ?        S    17:30   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127055_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12234  5.7  0.1  99320 14408 ?        R    17:30   3:55 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127055_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12235  5.6  0.1  99316 14400 ?        R    17:30   3:50 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127055_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12236  5.5  0.1  99316 14400 ?        R    17:30   3:49 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127055_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data 12336  0.0  0.0   2236   544 ?        S    17:31   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127087_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root     12337  0.0  0.0   3772  1628 ?        S    17:31   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127087_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12338  0.0  0.0   3784  2116 ?        S    17:31   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127087_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12339  0.0  0.2 103764 17528 ?        S    17:31   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127087_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12340  5.7  0.1  99324 14404 ?        R    17:31   3:54 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127087_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12341  5.6  0.1  99324 14404 ?        R    17:31   3:51 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127087_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12342  5.7  0.1  99312 14400 ?        R    17:31   3:52 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127087_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data 12343  0.0  0.0  34632  5916 ?        S    17:31   0:00 /usr/sbin/apache2 -k start
+www-data 12968  0.0  0.0   2236   544 ?        S    17:33   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127190_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root     12971  0.0  0.0   3772  1628 ?        S    17:33   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127190_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12972  0.0  0.0   3784  2112 ?        S    17:33   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127190_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12985  0.0  0.2 103768 17532 ?        S    17:33   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127190_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12990  5.5  0.1  99320 14400 ?        R    17:33   3:40 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127190_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12993  5.7  0.1  99320 14404 ?        R    17:33   3:47 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127190_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  12997  5.6  0.1  99320 14404 ?        R    17:33   3:45 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127190_InformePlanificacionLab2ComputacionParalela.pdf plan
+www-data 13077  0.0  0.0  34632  5848 ?        S    17:33   0:00 /usr/sbin/apache2 -k start
+www-data 13976  0.0  0.0   2236   544 ?        S    17:36   0:00 sh -c sudo -u cluster mpiexec -n 8 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127404_InformePlanificacionLab2ComputacionParalela.pdf
+root     13977  0.0  0.0   3772  1628 ?        S    17:36   0:00 sudo -u cluster mpiexec -n 8 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127404_InformePlanificacionLab2ComputacionParalela.pdf
+cluster  13978  0.0  0.0   3784  2124 ?        S    17:36   0:00 mpiexec -n 8 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127404_InformePlanificacionLab2ComputacionParalela.pdf
+cluster  13980  0.0  0.2 103772 17524 ?        S    17:36   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127404_InformePlanificacionLab2ComputacionParalela.pdf
+cluster  13981  5.6  0.1  99340 14424 ?        R    17:36   3:33 python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127404_InformePlanificacionLab2ComputacionParalela.pdf
+cluster  13982  5.6  0.1  99340 14428 ?        R    17:36   3:32 python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127404_InformePlanificacionLab2ComputacionParalela.pdf
+cluster  13983  5.5  0.1  99340 14428 ?        R    17:36   3:27 python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127404_InformePlanificacionLab2ComputacionParalela.pdf
+www-data 14126  0.0  0.0   2236   544 ?        S    17:37   0:00 sh -c sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127439_InformePlanificacionLab2ComputacionParalela.pdf
+root     14127  0.0  0.0   3772  1628 ?        S    17:37   0:00 sudo -u cluster mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127439_InformePlanificacionLab2ComputacionParalela.pdf
+cluster  14128  0.0  0.0   3784  2116 ?        S    17:37   0:00 mpiexec -n 4 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127439_InformePlanificacionLab2ComputacionParalela.pdf
+cluster  14129  0.0  0.2 103768 17536 ?        S    17:37   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127439_InformePlanificacionLab2ComputacionParalela.pdf
+cluster  14130  5.5  0.1  99340 14428 ?        R    17:37   3:26 python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127439_InformePlanificacionLab2ComputacionParalela.pdf
+cluster  14131  5.6  0.1  99336 14420 ?        R    17:37   3:29 python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127439_InformePlanificacionLab2ComputacionParalela.pdf
+cluster  14132  5.7  0.1  99332 14416 ?        R    17:37   3:35 python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127439_InformePlanificacionLab2ComputacionParalela.pdf
+www-data 14133  0.0  0.0  34764  6036 ?        S    17:37   0:00 /usr/sbin/apache2 -k start
+www-data 14337  0.0  0.0   2236   544 ?        S    17:38   0:00 sh -c sudo -u cluster mpiexec -n 8 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127521_InformePlanificacionLab2ComputacionParalela.pdf
+root     14338  0.0  0.0   3772  1628 ?        S    17:38   0:00 sudo -u cluster mpiexec -n 8 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127521_InformePlanificacionLab2ComputacionParalela.pdf
+cluster  14339  0.0  0.0   3784  2120 ?        S    17:38   0:00 mpiexec -n 8 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127521_InformePlanificacionLab2ComputacionParalela.pdf
+www-data 14340  0.0  0.0  34772  6220 ?        S    17:38   0:00 /usr/sbin/apache2 -k start
+cluster  14344  0.0  0.2 103768 17524 ?        S    17:38   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127521_InformePlanificacionLab2ComputacionParalela.pdf
+cluster  14345  5.5  0.1  99344 14432 ?        R    17:38   3:21 python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127521_InformePlanificacionLab2ComputacionParalela.pdf
+cluster  14346  5.7  0.1  99348 14428 ?        R    17:38   3:27 python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127521_InformePlanificacionLab2ComputacionParalela.pdf
+cluster  14347  5.5  0.1  99336 14424 ?        R    17:38   3:22 python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403127521_InformePlanificacionLab2ComputacionParalela.pdf
+www-data 14964  0.0  0.0  34772  6212 ?        S    17:43   0:00 /usr/sbin/apache2 -k start
+www-data 15273  0.0  0.0  34632  5908 ?        S    17:45   0:00 /usr/sbin/apache2 -k start
+www-data 15274  0.0  0.0  34632  5912 ?        S    17:45   0:00 /usr/sbin/apache2 -k start
+www-data 15275  0.0  0.0  34508  6044 ?        S    17:45   0:00 /usr/sbin/apache2 -k start
+root     15473  0.0  0.0  10064  3368 ?        Ss   17:46   0:00 sshd: cluster [priv]
+cluster  15628  0.0  0.0  10064  1604 ?        S    17:46   0:00 sshd: cluster@pts/168
+cluster  15629  0.0  0.0  12336  7392 pts/168  Ss+  17:46   0:00 -bash
+www-data 16407  0.0  0.0   2236   548 ?        S    17:50   0:00 sh -c sudo -u cluster mpiexec -n 8 --hostfile /mpi/desarrollo-paralelas-2014/hostfile  python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403128206_InformePlanificacionLab2ComputacionParalela.pdf 'plan'
+root     16408  0.0  0.0   3772  1632 ?        S    17:50   0:00 sudo -u cluster mpiexec -n 8 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403128206_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  16409  0.0  0.0   3784  2116 ?        S    17:50   0:00 mpiexec -n 8 --hostfile /mpi/desarrollo-paralelas-2014/hostfile python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403128206_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  16411  0.0  0.2 103772 17516 ?        S    17:50   0:00 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403128206_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  16412  5.6  0.1  99320 14400 ?        R    17:50   2:47 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403128206_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  16413  5.6  0.1  99328 14412 ?        R    17:50   2:47 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403128206_InformePlanificacionLab2ComputacionParalela.pdf plan
+cluster  16414  5.4  0.1  99320 14408 ?        R    17:50   2:41 python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py /mpi/desarrollo-paralelas-2014/web/subidas/1403128206_InformePlanificacionLab2ComputacionParalela.pdf plan
+root     25335  0.0  0.0      0     0 ?        S    18:02   0:00 [kworker/u16:2]
