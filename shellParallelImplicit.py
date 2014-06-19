@@ -47,7 +47,7 @@ if rank == master:
     match = sum(match, [])
     
     for m in match:
-        m['position'] = list(m['position'])[0]
+        m['position'] = list(m['position'])
     sheets = [str2matrix(text=sheet, ncol=60) for s in sheets]   
     bible = {'sheets':sheets, 'match':match}
     print json.dumps(bible)

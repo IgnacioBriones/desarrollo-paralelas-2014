@@ -35,9 +35,8 @@ if rank == master:
     t = time()
     currentDir = os.path.dirname(os.path.abspath(__file__))
     # path = currentDir + "/../files/biblia.pdf"
-
-path = "files/biblia.pdf"
-sheets = parallelpdf2string(comm=comm, path=path)
+    path = "files/biblia.pdf"
+    sheets = parallelpdf2string(comm=comm, path=path)
     
 # usamos las mismas hojas para cada uno de los procesadores
 sheets = comm.bcast(sheets, root=master)

@@ -36,7 +36,7 @@
     <div class="title">
       <h1>Computaci&oacute;n Paralela</h1>
       <br /> 
-      <h3>Proyecto final: "Procesamiento de Texto"</h3>
+      <h3>Proyecto final: "Código secreto de la Biblia"</h3>
     </div>
   </div>
   <div id="main">

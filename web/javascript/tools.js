@@ -74,7 +74,6 @@ function book(nfilas){
 	return '<div class = "libro">' +libro+'</div>';
 }
 
-
 var fila = function(i) {
 	var columnas = '';
 	for (var j = 0; j < 60; j++) {
