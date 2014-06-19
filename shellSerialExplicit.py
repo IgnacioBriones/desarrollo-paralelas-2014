@@ -37,6 +37,3 @@ sheets = [str2matrix(text=sheet, ncol=60) for s in sheets]
 nhojas = [len(s) for s in sheets]
 bible = {'sheets':sheets, 'match':match, 'nhojas':nhojas}
 print json.dumps(bible)   
-
-
-    

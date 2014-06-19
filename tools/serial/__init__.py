@@ -4,14 +4,16 @@ Created on 13-05-2014
 
 @author: leonardo jofre
 
-Cada texto tiene n seuencias que separan los caracteres en n espacios
+Cada texto tiene n secuencias que separan los caracteres en n espacios
 
-referencias
+referencias: para poder encontrar varias veces una palabra
 http://stackoverflow.com/questions/3519565/find-the-indexes-of-all-regex-matches-in-python
 '''
 
 import numpy as np
 import re
+from function_ordered_pair import ordered_pair
+from vrcoords import vr
 
 def get_pattern(text, rank, word):
     """toma un texto y un rank (que dice cuantos espacios se van a av"""
@@ -38,6 +40,23 @@ def get_pattern(text, rank, word):
     except :
         pass
     
+    # convertir todos los elementos de las listas a tuplas
+    match = [[ordered_pair(n) for n in m] for m in match]
+            
+    # eliminar todos los conjuntos de tuplas que no esten sobre la misma recta
+    if match != []:
+        """si la lista no esta vacia tiene que tener elementos sobre la misma recta"""
+        match = [m for m in match if vr(m)]
+    
+    return match
+
+def clearMatch(match):
+    """elimina elementos repetidos y agrega informacion adicional"""
+    match = sum(match, [])
+    match = [m for m in match if m['position'] != []]
+
+    for m in match:
+        m['position'] = list(m['position'])
     return match
     
     

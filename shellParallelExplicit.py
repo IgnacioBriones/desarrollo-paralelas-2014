@@ -12,51 +12,31 @@ import commands
 import json
 from tools.stringamatriz import str2matrix
 import sys
-
-try:
-    from tools.serial import get_pattern
-    from tools.pdftolist import pdf2string
-except Exception:
-    print "el nodo con ip " + commands.getoutput("/sbin/ifconfig").split("\n")[1].split()[1][5:] + " y rank " + str(MPI.COMM_WORLD.rank) + "no reconoce las librerias" 
+from tools.serial import get_pattern, clearMatch
+from tools.parallelpdftolist import parallelpdf2string
 
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
-currentDir = os.path.dirname(os.path.abspath(__file__))
+master = 0
 
 path, words = (sys.argv[1], sys.argv[2])
 words = words.split()
+words = words + [w[::-1] for w in words]
 
-master = 0
-sheets = None
+sheets = parallelpdf2string(comm=comm, path=path)
 
-if rank == master:
-    #
-    t = time()
-    # path = currentDir + "/../files/biblia.pdf"
-    
-    sheets = pdf2string(path=path)
-# usamos las mismas hojas para cada uno de los procesadores
-sheets = comm.bcast(sheets, root=master)
 
 match = [[{'word':word, 'page':page, 'jump':rank + 1, 'position':get_pattern(text=sheet, rank=rank, word=word)}
           for page, sheet in enumerate(sheets)] for word in words ]
 
 match = sum(match, [])
-match = [m for m in match if m['position'] != set([])]
 match = comm.gather(match, root=master)
 
 if rank == master:
-    match = [m for m in match if m != []]
-    match = sum(match, [])
-    
-    for m in match:
-        m['position'] = list(m['position'])
+    match = clearMatch(match)
 
     sheets = [str2matrix(text=sheet, ncol=60) for sheet in sheets]    
     bible = {'sheets':sheets, 'match':match}
-    json.dumps(bible)
-
-
-    print json.dumps(bible)
+    print json.dumps(match)
 
     
