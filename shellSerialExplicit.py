@@ -15,14 +15,6 @@ words = words.split()
 sheets = pdf2string(path=path)
 
 rank = 0
-match = [[{'word':word, 'page':page + 1, 'jump':rank + 1, 'position':get_pattern(text=sheet, rank=rank, word=word)}
-	  for page, sheet in enumerate(sheets)] for word in words ]
-
-path, words = (sys.argv[1], sys.argv[2])
-words = words.split()
-sheets = pdf2string(path=path)
-
-rank = 0
 
 match = [[{'word':word, 'page':page, 'jump':rank + 1, 'position':get_pattern(text=sheet, rank=rank, word=word)}
       for page, sheet in enumerate(sheets)] for word in words ]
