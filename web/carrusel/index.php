@@ -17,7 +17,7 @@
     <script>
     $(document).ready(function() {
       $(".owl-carousel").owlCarousel({
-		itemsCustom : false,
+	itemsCustom : false,
         stopOnHover : true,
         navigation:true,
         singleItem : true,
@@ -37,7 +37,7 @@
 		document.write("<div class='owl-carousel'>");
 		for (i=0; i<bible["sheets"].length; i++)
 		{
-			document.write("<div>");
+			document.write("<div class='sheet'>");
 			document.write("<table>");
 			for (j=0; j<bible["sheets"][i].length; j++)
 			{
