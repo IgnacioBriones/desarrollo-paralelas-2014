@@ -1,11 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html >
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-		<title>Computaci&oacute;n Paralela</title>
+		<title>Computación Paralela</title>
 		<link href="style.css" rel="stylesheet" type="text/css" />
-
 		<script type="text/javascript" src="validaciones.js"></script>
 
 		<script type="text/javascript">
@@ -17,7 +16,6 @@
 		</script>
 
 		<script type="text/javascript">
-			
 			function validar() {
 
 				if ($('select').val() == 'Explicita') {
@@ -118,14 +116,14 @@
 		<div class="content">
 			<div id="header">
 				<div class="title">
-					<h1>Computaci&oacute;n Paralela</h1>
+					<h1>Computación Paralela</h1>
 					<br />
-					<h3>Proyecto final: "Procesamiento de Texto"</h3>
+					<h3>Proyecto final: "El código secreto de la biblia</h3>
 				</div>
 			</div>
 			<div id="main">
 				<div class="center">
-					<h1>Formulario de B&uacute;squeda:</h1>
+					<h1>Formulario de Búsqueda:</h1>
 					<br />
 
 					<form action="resultado.php" method="post" enctype="multipart/form-data" onsubmit="return validar()">
@@ -136,32 +134,32 @@
 						<br/>
 						<br/>
 
-						Seleccione tipo de b&uacute;squeda:
+						Seleccione tipo de búsqueda:
 						<br />
 						<br />
 						<div id="TipoBusqueda">
 							<select name="tipo_busqueda" id="ExpImp">
-								<option value="">Seleccione una opci&oacute;n</option>
-								<option value="Explicita">Expl&iacute;cita</option>
-								<option value="Implicita">Impl&iacute;cita</option>
+								<option value="">Seleccione una opción</option>
+								<option value="Explicita">Explícita</option>
+								<option value="Implicita">Implícita</option>
 							</select>
 						</div>
 
 						<div id="BusquedaExplicita">
 							<br/>
-							Introduzca b&uacute;squeda expl&iacute;cita:
+							Introduzca búsqueda explícita:
 							<br />
 							<br />
 							<input type="text" name="frases" id="bus_explicita">
 						</div>
 
 						<br />
-						Seleccione tipo de ejecuci&oacute;n:
+						Seleccione tipo de ejecución:
 						<br />
 						<br />
 						<div id="SeleccionEjecucion">
 							<select name="tipo_ejecucion" id="SecPar">
-								<option value="">Seleccione una opci&oacute;n</option>
+								<option value="">Seleccione una opción</option>
 								<option value="Secuencial">Secuencial</option>
 								<option value="Paralelo">Paralelo</option>
 							</select>
@@ -169,11 +167,11 @@
 
 						<div id="SeleccionProcesadores">
 							<br/>
-							Seleccione n&uacute;mero de procesadores:
+							Seleccione número de procesadores:
 							<br />
 							<br />
 							<select id="NumeroProcesadores" name="NumeroProcesadores">
-								<option value="">Seleccione una opci&oacute;n</option>
+								<option value="">Seleccione una opción</option>
 								<option value="4">4 Procesadores</option>
 								<option value="8">8 Procesadores</option>
 								<option value="12">12 Procesadores</option>
@@ -207,11 +205,10 @@
 			<div id="prefooter">
 			<div id="footer">
 				<div class="padding">
-					Copyright Curso Computaci&oacute;n Paralela 2014 / Primer Semestre, UTEM
+					Copyright Curso Computación Paralela 2014 / Primer Semestre, UTEM
 				</div>
 			</div>
-		</div>
+		</div></div>
 
-	</body>
 	</body>
 </html>
