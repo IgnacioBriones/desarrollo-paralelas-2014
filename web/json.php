@@ -37,7 +37,7 @@ $nombre = time()."_".$nombre;
 			else
 			{
 				//Paralelo Implicito
-				$consulta_paralela_implicita = "sudo -u cluster mpiexec "."-n ".$_POST['NumeroProcesadores']." --hostfile ./../hostfile"."  "."python ./../shellParallelImplicit.py"." "."/mpi/desarrollo-paralelas-2014/web/subidas/".$nombre;
+				$consulta_paralela_implicita = "sudo -u cluster mpiexec "."-n ".$_POST['NumeroProcesadores']." --hostfile ./../hostfile"."  "."python ./../shellParallelImplicit.py"." "."./..//web/subidas/".$nombre;
 				$salida = shell_exec($consulta_paralela_implicita);	
 				//echo $consulta_paralela_implicita;
 				echo $salida;
