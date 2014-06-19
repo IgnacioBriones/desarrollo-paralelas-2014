@@ -10,7 +10,7 @@ $nombre = time()."_".$nombre;
 			if($_POST['tipo_busqueda'] == "Explicita")
 			{
 				//Secuencial Explicito
-				$consulta_secuencial_explicita = "python /mpi/desarrollo-paralelas-2014/shellSerialExplicit.py"."  "."/mpi/desarrollo-paralelas-2014/web/subidas/".$nombre." '".$_POST['frases']."'";
+				$consulta_secuencial_explicita = "python ./../shellSerialExplicit.py"."  "."./../web/subidas/".$nombre." '".$_POST['frases']."'";
 				$salida = shell_exec($consulta_secuencial_explicita);
 				//echo $consulta_secuencial_explicita;
 				echo $salida;
@@ -18,7 +18,7 @@ $nombre = time()."_".$nombre;
 			else
 			{
 				//Secuencial Implicito
-				$consulta_secuencial_implicita = "python /mpi/desarrollo-paralelas-2014/shellSerialImplicit.py"."  "."/mpi/desarrollo-paralelas-2014/web/subidas/".$nombre;
+				$consulta_secuencial_implicita = "python ./../shellSerialImplicit.py"."  "."./../web/subidas/".$nombre;
 				$salida = shell_exec($consulta_secuencial_implicita);
 				//echo $consulta_secuencial_implicita;
 				echo $salida;
@@ -29,7 +29,7 @@ $nombre = time()."_".$nombre;
 			if($_POST['tipo_busqueda'] == "Explicita")
 			{
 				//Paralelo Explicito
-				$consulta_paralela_explicita = "sudo -u cluster mpiexec "."-n ".$_POST['NumeroProcesadores']." --hostfile /mpi/desarrollo-paralelas-2014/hostfile"."  "."python /mpi/desarrollo-paralelas-2014/shellParallelExplicit.py"." "."/mpi/desarrollo-paralelas-2014/web/subidas/".$nombre." '".$_POST['frases']."'";
+				$consulta_paralela_explicita = "sudo -u cluster mpiexec "."-n ".$_POST['NumeroProcesadores']." --hostfile ./../hostfile"."  "."python ./../shellParallelExplicit.py"." "."./../web/subidas/".$nombre." '".$_POST['frases']."'";
 				$salida = shell_exec($consulta_paralela_explicita);
 				//echo $consulta_paralela_explicita;
 				echo $salida;
@@ -37,7 +37,7 @@ $nombre = time()."_".$nombre;
 			else
 			{
 				//Paralelo Implicito
-				$consulta_paralela_implicita = "sudo -u cluster mpiexec "."-n ".$_POST['NumeroProcesadores']." --hostfile /mpi/desarrollo-paralelas-2014/hostfile"."  "."python /mpi/desarrollo-paralelas-2014/shellParallelImplicit.py"." "."/mpi/desarrollo-paralelas-2014/web/subidas/".$nombre;
+				$consulta_paralela_implicita = "sudo -u cluster mpiexec "."-n ".$_POST['NumeroProcesadores']." --hostfile ./../hostfile"."  "."python ./../shellParallelImplicit.py"." "."/mpi/desarrollo-paralelas-2014/web/subidas/".$nombre;
 				$salida = shell_exec($consulta_paralela_implicita);	
 				//echo $consulta_paralela_implicita;
 				echo $salida;
