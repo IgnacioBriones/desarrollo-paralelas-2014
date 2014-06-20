@@ -42,12 +42,12 @@ def get_pattern(text, rank, word):
     
     # convertir todos los elementos de las listas a tuplas
     match = [[ordered_pair(n) for n in m] for m in match]
-            
+    """        
     # eliminar todos los conjuntos de tuplas que no esten sobre la misma recta
     if match != []:
-        """si la lista no esta vacia tiene que tener elementos sobre la misma recta"""
+        # si la lista no esta vacia tiene que tener elementos sobre la misma recta
         match = [m for m in match if vr(m)]
-    
+    """
     return match
 
 def clearMatch(match):
