@@ -22,15 +22,12 @@ match = [[{'word':word, 'page':page, 'jump':rank + 1, 'position':get_pattern(tex
       for page, sheet in enumerate(sheets)] for word in words ]
 match = clearMatch(match)
 
-<<<<<<< HEAD
 for m in match:
     m['position'] = list(m['position'])
-sheets = [str2matrix(text=sheet, ncol=60) for s in sheets]
-
-=======
-sheets = [str2matrix(text=sheet, ncol=60) for s in sheets]   
->>>>>>> 87d64d40942fdd1e78660b79538c3fd0805866a5
-bible = {'sheets':sheets, 'match':match}
-print json.dumps(match)   
+    
+sheets = [str2matrix(text=sheet, ncol=60) for sheet in sheets]
+nhojas = [len(s) for s in sheets]
+bible = {'sheets':sheets, 'match':match, 'nhojas':nhojas}
+print json.dumps(bible)   
 
     
