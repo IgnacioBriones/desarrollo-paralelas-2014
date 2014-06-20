@@ -30,7 +30,7 @@ python shellSerialImplicit.py  ./files/biblia.pdf
 </code></pre>
 * Paralelo explícito
 <pre><code class="shell">
-mpiexec -n 4 python --hostfile ./hostfile shellParallelExplicit.py ./files/biblia.pdf "ola k ase"
+mpiexec -n 4 --hostfile ./hostfile python shellParallelExplicit.py ./files/biblia.pdf "ola k ase"
 </code></pre>
 
 * Paraleo implícito

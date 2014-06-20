@@ -14,6 +14,7 @@ import numpy as np
 import re
 from function_ordered_pair import ordered_pair
 from vrcoords import vr
+from coordenadas import misma_recta
 
 def get_pattern(text, rank, word):
     """toma un texto y un rank (que dice cuantos espacios se van a av"""
@@ -45,8 +46,8 @@ def get_pattern(text, rank, word):
             
     # eliminar todos los conjuntos de tuplas que no esten sobre la misma recta
     if match != []:
-        """si la lista no esta vacia tiene que tener elementos sobre la misma recta"""
-        match = [m for m in match if vr(m)]
+        # si la lista no esta vacia tiene que tener elementos sobre la misma recta
+        match = [m for m in match if misma_recta(m)]
     
     return match
 

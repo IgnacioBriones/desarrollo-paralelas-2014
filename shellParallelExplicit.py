@@ -7,13 +7,14 @@ Created on 14-05-2014
 
 from mpi4py import MPI
 from time import time
+from tools.serial import get_pattern, clearMatch
+from tools.parallelpdftolist import parallelpdf2string
+from tools.stringamatriz import str2matrix
 import os
 import commands
 import json
-from tools.stringamatriz import str2matrix
 import sys
-from tools.serial import get_pattern, clearMatch
-from tools.parallelpdftolist import parallelpdf2string
+
 
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
@@ -35,8 +36,10 @@ match = comm.gather(match, root=master)
 if rank == master:
     match = clearMatch(match)
 
-    sheets = [str2matrix(text=sheet, ncol=60) for sheet in sheets]    
-    bible = {'sheets':sheets, 'match':match}
-    print json.dumps(match)
+    sheets = [str2matrix(text=sheet, ncol=60) for sheet in sheets]
+    nhojas = [len(s) for s in sheets]    
+    bible = {'sheets':sheets, 'match':match, 'nhojas':nhojas}
+    print json.dumps(bible)
+
 
     
