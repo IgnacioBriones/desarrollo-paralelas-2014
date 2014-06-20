@@ -3,6 +3,7 @@
 $nombre = $_POST['nombre'];
 $nombre = str_replace(" ", "_", $nombre);
 $nombre = time()."_".$nombre;
+$absPath = realpath(dirname(__FILE__));
 //echo $_POST['tipo_busqueda'].' '.$nombre.' '.$_POST['frases'].' '.$_POST['tipo_ejecucion'].' '.$_POST['NumeroProcesadores'];
 
 		if($_POST['tipo_ejecucion'] == "Secuencial")
@@ -10,7 +11,7 @@ $nombre = time()."_".$nombre;
 			if($_POST['tipo_busqueda'] == "Explicita")
 			{
 				//Secuencial Explicito
-				$consulta_secuencial_explicita = "python ./../shellSerialExplicit.py"."  "."./../web/subidas/".$nombre." '".$_POST['frases']."'";
+				$consulta_secuencial_explicita = "python ".$absPath."/../shellSerialExplicit.py"."  ".$absPath."/subidas/".$nombre." '".$_POST['frases']."'";
 				$salida = shell_exec($consulta_secuencial_explicita);
 				//echo $consulta_secuencial_explicita;
 				echo $salida;

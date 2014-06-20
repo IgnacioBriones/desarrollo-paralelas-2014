@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
@@ -9,7 +9,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script src="./javascript/tools.js"></script>
-<script language="javascript">
+<script >
 	var info 
 	$(document).ready(function() {
 		$("#ajax_loading").show();
@@ -66,7 +66,8 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 		$nombre = time()."_".$nombre;
 		
 		//cargando archivo
-		move_uploaded_file($nombre_tmp, "subidas/" . $nombre);    
+		$absPath = realpath(dirname(__FILE__));
+		move_uploaded_file($nombre_tmp, $absPath."/subidas/".$nombre);    
 }
 
 ?>
