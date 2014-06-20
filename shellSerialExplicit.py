@@ -13,6 +13,7 @@ import sys
 path, words = (sys.argv[1], sys.argv[2])
 words = words.split()
 sheets = pdf2string(path=path)
+words = words + [w[::-1] for w in words]
 
 rank = 0
 
