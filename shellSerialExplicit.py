@@ -21,7 +21,7 @@ match = [[{'word':word, 'page':page, 'jump':rank + 1, 'position':get_pattern(tex
       for page, sheet in enumerate(sheets)] for word in words ]
 
 match = sum(match, [])
-match = [m for m in match if m['position'] != set([])]
+match = [m for m in match if m['position'] != [] ]
 
 for m in match:
     m['position'] = list(m['position'])
