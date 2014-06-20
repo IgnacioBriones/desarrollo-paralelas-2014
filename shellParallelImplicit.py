@@ -33,19 +33,17 @@ match = sum(match, [])
 match = comm.gather(match, root=master)
 
 if rank == master:
-<<<<<<< HEAD
+
     match = [m for m in match if m != []]
     match = sum(match, [])
     
     for m in match:
         m['position'] = list(m['position'])
-    sheets = [str2matrix(text=sheet, ncol=60) for s in sheets]   
-=======
     match = clearMatch(match)
 
     sheets = [str2matrix(text=sheet, ncol=60) for sheet in sheets]    
->>>>>>> 87d64d40942fdd1e78660b79538c3fd0805866a5
+
     bible = {'sheets':sheets, 'match':match}
-    print json.dumps(match)
+    print json.dumps(bible)
     
     
