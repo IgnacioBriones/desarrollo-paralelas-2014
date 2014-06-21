@@ -6,8 +6,13 @@
 <title>Computaci&oacute;n Paralela</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 
+<link href="owl.carousel.css" rel="stylesheet" type="text/css" />
+<link href="owl.theme.css" rel="stylesheet" type="text/css" />
+<link href="owl.transitions.css" rel="stylesheet" type="text/css" />
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script src="./javascript/tools.js"></script>
+<script src="./javascript/owl.carousel.js"></script>
 
 
 </head>
