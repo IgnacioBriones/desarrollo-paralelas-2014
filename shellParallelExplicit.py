@@ -37,7 +37,7 @@ match = comm.gather(match, root=master)
 if rank == master:
     match = clearMatch(match)
 
-    sheets = [str2matrix(text=sheet, ncol=30) for sheet in sheets]
+    sheets = [str2matrix(text=sheet, ncol=60) for sheet in sheets]
     nhojas = [len(s) for s in sheets]    
     bible = {'sheets':sheets, 'match':match, 'nhojas':nhojas}
     print json.dumps(bible)
