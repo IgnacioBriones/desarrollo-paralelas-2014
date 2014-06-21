@@ -278,3 +278,31 @@ li a:hover {
     margin-left: 160px;
 }
 
+.libro{
+	
+}
+
+.hoja{
+
+}
+
+.fila{
+	clear: both;
+}
+
+.letra{
+	float: left;
+	font-size: 10px;
+	width: 3px;
+	height: 3px;
+	text-align: center;
+	padding: 3px;
+}
+
+.match{
+	color: white;
+	background-color: #F00;
+}
+.non_match{
+	color: black;
+}
