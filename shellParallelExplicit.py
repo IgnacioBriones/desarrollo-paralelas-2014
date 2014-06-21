@@ -23,7 +23,17 @@ master = 0
 
 
 path, words = (sys.argv[1], sys.argv[2])
-words = words.split()
+words = words.replace("Á","a")
+words = words.replace("É","e")
+words = words.replace("Í","i")
+words = words.replace("Ó","o")
+words = words.replace("Ú","u")
+words = words.replace("á","a")
+words = words.replace("é","e")
+words = words.replace("í","i")
+words = words.replace("ó","o")
+words = words.replace("ú","u")
+words = words.lower().split()
 words = words + [w[::-1] for w in words]
 ncol = 60
 sheets = parallelpdf2string(comm=comm, path=path)
