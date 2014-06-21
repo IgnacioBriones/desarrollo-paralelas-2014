@@ -69,6 +69,17 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 					}
 
 					changeClass(info.match);
+					
+					$(".libro").owlCarousel({
+					        stopOnHover : true,
+					        singleItem : true,
+					        transitionStyle:"fade",
+					        pagination: true,
+					        paginationNumbers: true,
+					        scrollPerPage: false,
+					        autoHeight: true,
+					        navigation: true
+     				 	});
 		},
 		});
 	});
