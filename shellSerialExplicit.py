@@ -12,8 +12,9 @@ import sys
 
 path, words = (sys.argv[1], sys.argv[2])
 words = words.split()
-sheets = pdf2string(path=path)
+
 words = words + [w[::-1] for w in words]
+sheets = pdf2string(path=path)
 
 rank = 0
 
@@ -30,3 +31,4 @@ sheets = [str2matrix(text=sheet, ncol=60) for sheet in sheets]
 nhojas = [len(s) for s in sheets]
 bible = {'sheets':sheets, 'match':match, 'nhojas':nhojas}
 print json.dumps(bible)   
+# print match

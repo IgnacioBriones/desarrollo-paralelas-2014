@@ -82,3 +82,13 @@ var fila = function(i) {
 	return columnas;
 };
 
+function paint(libro,nfilas){
+	for(var i=0;i<libro.length;i++){
+		for(var j=0;j<nfilas;j++){
+			for(var k=0;k<60;k++){
+				
+			}
+		}
+	}
+}
+

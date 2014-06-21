@@ -1,9 +1,8 @@
 <?php
 
 $nombre = $_POST['nombre'];
-$nombre = str_replace(" ", "_", $nombre);
-$nombre = time()."_".$nombre;
 $absPath = realpath(dirname(__FILE__));
+$kill = shell_exec("sudo -u cluster pkill mpiexec");
 //echo $_POST['tipo_busqueda'].' '.$nombre.' '.$_POST['frases'].' '.$_POST['tipo_ejecucion'].' '.$_POST['NumeroProcesadores'];
 
 		if($_POST['tipo_ejecucion'] == "Secuencial")
@@ -44,4 +43,5 @@ $absPath = realpath(dirname(__FILE__));
 				echo $salida;
 			}
 		}
+
 ?>

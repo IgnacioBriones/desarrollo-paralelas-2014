@@ -20,7 +20,6 @@ rank = 0
 
 match = [[{'word':word, 'page':page, 'jump':rank + 1, 'position':get_pattern(text=sheet, rank=rank, word=word)}
       for page, sheet in enumerate(sheets)] for word in words ]
-
 match = sum(match, [])
 match = [m for m in match if m['position'] != []]
 
@@ -31,4 +30,3 @@ sheets = [str2matrix(text=sheet, ncol=60) for sheet in sheets]
 nhojas = [len(s) for s in sheets]
 bible = {'sheets':sheets, 'match':match, 'nhojas':nhojas}
 print json.dumps(bible)   
-    
