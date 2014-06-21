@@ -50,7 +50,7 @@ body {
 #Resultado {
 	padding-top: 15px;
 	width: 550px;
-	height: 200px
+	height: auto;
 }
 #header .title {
 	padding: 60px 0 0 60px;
