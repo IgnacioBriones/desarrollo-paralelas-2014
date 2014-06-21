@@ -42,8 +42,6 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 	};
 	
 	$(document).ready(function() {
-		
-		
 		$("#ajax_loading").show();
 		$.ajax({
         url: "json.php",
@@ -60,6 +58,24 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 					info = jQuery.parseJSON(data);
 					$("#ajax_loading").hide();
 					alert(data);
+					$('#Resultado').html(book(info.nhojas));
+					for(var i=0; i<info.sheets.length ;i++){
+						for(var j=0; j<info.sheets[i].length; j++){
+							for(var k=0; k<60 ; k++){
+								$('#a_'+i+' #a_'+j+'_'+k).html(info.sheets[i][j][k]);
+							}
+						}
+					}
+					
+					for(m in info.match){
+						for(p in m.position){
+							for(l in p){
+								for(c in l){
+									changeClass(c[0],c[1]);
+								}
+							}
+						}
+					}
 		},
 		});
 	});
@@ -105,7 +121,7 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 <div id="prefooter"></div>
 
 <div id="footer">
-    <div class="padding"> Copyright Curso Computaci&oacute;n Paralela 2014 / Primer Semestre, UTEM </div>
+    <div class="padding"> Copyright Curso Computaci&oacute;n Paralela 2014 / Primer Semestre, UTEM  </div>
 </div>
 
 </div>
