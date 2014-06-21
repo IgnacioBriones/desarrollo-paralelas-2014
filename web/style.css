@@ -271,29 +271,28 @@ li a:hover {
 	width: 800px;
 	margin: 40px auto;
 }
-#ajax_loading
-{
+#ajax_loading {
 	display: none;
-    margin-top: 80px;
-    margin-left: 160px;
+	margin-top: 80px;
+	margin-left: 160px;
 }
 
-.libro{
+.libro {
 	margin: 0;
 	padding: 0;
 }
 
-.hoja{
+.hoja {
 
 }
 
-.fila{
+.fila {
 	position: relative;
 	display: block;
 	clear: both;
 }
 
-.letra{
+.letra {
 	display: 1px solid black;
 	float: left;
 	width: 9px;
@@ -302,16 +301,16 @@ li a:hover {
 	font-size: 10px;
 }
 
-.match{
+.match {
 	color: white;
 	background-color: #F00;
 }
 
-.non_match{
+.non_match {
 	color: black;
 }
 
-#owl-demo .owl-item div{
-  padding:5px;
+#owl-demo .owl-item div {
+	padding: 5px;
 }
 

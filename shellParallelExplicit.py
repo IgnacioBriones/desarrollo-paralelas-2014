@@ -25,7 +25,7 @@ master = 0
 path, words = (sys.argv[1], sys.argv[2])
 words = words.split()
 words = words + [w[::-1] for w in words]
-ncol = 30
+ncol = 60
 sheets = parallelpdf2string(comm=comm, path=path)
 
 match = [[{'word':word, 'page':page, 'jump':rank + 1, 'position':get_pattern(text=sheet, rank=rank, word=word)}

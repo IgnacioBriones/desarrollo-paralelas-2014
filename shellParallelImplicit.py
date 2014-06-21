@@ -23,7 +23,8 @@ master = 0
 path = sys.argv[1]
 words = lista_diccionario()
 words = words + [w[::-1] for w in words]
-ncol = 30
+ncol = 60
+
 sheets = parallelpdf2string(comm=comm, path=path)
 
 

@@ -67,7 +67,7 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 					
 					for(var i=0; i<info.sheets.length ;i++){
 						for(var j=0; j<info.sheets[i].length; j++){
-							for(var k=0; k<30 ; k++){
+							for(var k=0; k<60 ; k++){
 								$('#letra_'+i+'_'+j+'_'+k).html(info.sheets[i][j][k]);
 							}
 						}

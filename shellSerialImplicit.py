@@ -14,8 +14,10 @@ import sys
 path = sys.argv[1]
 words = lista_diccionario()
 words = words + [w[::-1] for w in words]
+ncol=60
+
 sheets = pdf2string(path=path)
-ncol=30
+
 
 match = [[[{'word':word, 'page':page, 'jump':rank + 1, 'position':get_pattern(text=sheet, rank=rank, word=word)}
       for page, sheet in enumerate(sheets)] for word in words ] for rank in range(10)]

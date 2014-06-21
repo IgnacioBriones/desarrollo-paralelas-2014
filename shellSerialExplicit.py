@@ -10,9 +10,10 @@ from tools.stringamatriz import str2matrix
 import json
 import sys
 
-ncol=30 #numero de columnas de la hoja
+
 path, words = (sys.argv[1], sys.argv[2])
 words = words.split()
+ncol=60 #numero de columnas de la hoja
 
 words = words + [w[::-1] for w in words]
 sheets = pdf2string(path=path)
