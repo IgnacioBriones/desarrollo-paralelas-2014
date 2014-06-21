@@ -62,7 +62,7 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 					for(var i=0; i<info.sheets.length ;i++){
 						for(var j=0; j<info.sheets[i].length; j++){
 							for(var k=0; k<60 ; k++){
-								$('#a_'+i+' #a_'+j+'_'+k).html(info.sheets[i][j][k]);
+								$('#letra_'+i+'_'+j+'_'+k).html(info.sheets[i][j][k]);
 							}
 						}
 					}
@@ -95,15 +95,6 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 <h1>Resultado</h1>
 <img src="/images/ajax.gif" id="ajax_loading" width="100" />
 <div id="Resultado">
-
-
-
-<script>
-	// la informacion ya esta en la variable info
-	libro = info.sheets;
-	match = info.match;
-	
-</script>
 
 </div>
 </div>
