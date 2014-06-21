@@ -306,3 +306,8 @@ li a:hover {
 .non_match{
 	color: black;
 }
+
+#owl-demo .owl-item div{
+  padding:5px;
+}
+

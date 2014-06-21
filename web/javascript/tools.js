@@ -37,7 +37,7 @@ function book(nfilas) {
 		libro = libro + '<div class = "hoja" id = "hoja_' + i + '">'
 				+ Sheet(i, nfilas[i]) + '</div>';
 	}
-	return '<div class = "libro">' + libro + '</div>';
+	return '<div class = "libro owl-carousel">' + libro + '</div>';
 }
 
 var fila = function(sheetId, i) {
