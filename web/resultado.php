@@ -57,7 +57,7 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 		success: function(data){
 					info = jQuery.parseJSON(data);
 					$("#ajax_loading").hide();
-					alert(data);
+
 					$('#Resultado').html(book(info.nhojas));
 					
 					for(var i=0; i<info.sheets.length ;i++){

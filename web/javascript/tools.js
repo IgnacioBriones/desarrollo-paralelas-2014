@@ -42,7 +42,7 @@ function book(nfilas) {
 
 var fila = function(sheetId, i) {
 	var columnas = '';
-	for ( var j = 0; j < 60; j++) {
+	for ( var j = 0; j < 30; j++) {
 		columnas += '<div class = "letra non_match" id = "letra_' + sheetId
 				+ '_' + i + '_' + j + '">' + '</div>';
 	}

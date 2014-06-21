@@ -23,7 +23,7 @@ master = 0
 path = sys.argv[1]
 words = lista_diccionario()
 words = words + [w[::-1] for w in words]
-
+ncol = 30
 sheets = parallelpdf2string(comm=comm, path=path)
 
 
@@ -36,7 +36,7 @@ match = comm.gather(match, root=master)
 if rank == master:
     match = clearMatch(match)
 
-    sheets = [str2matrix(text=sheet, ncol=60) for sheet in sheets]    
+    sheets = [str2matrix(text=sheet, ncol=ncol) for sheet in sheets]    
     nhojas = [len(s) for s in sheets]
     bible = {'sheets':sheets, 'match':match, 'nhojas':nhojas}
     print json.dumps(bible)
