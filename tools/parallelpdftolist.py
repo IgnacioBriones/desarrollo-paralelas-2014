@@ -12,6 +12,7 @@ def parallelpdf2string(comm, path):
     
     pdf = PdfFileReader(open(path, "rb"))
     total = pdf.getNumPages()
+    auxtotal = total
     lista = []
     aux = []
     aux2 = []
@@ -31,18 +32,19 @@ def parallelpdf2string(comm, path):
       
     aux = comm.scatter(lista, root=master)
     for l in aux:
-        commands.getoutput("pdftotext -f " + str(l) + " -l " + str(l) + " " + path + " " + str(l) + ".txt")
-        txt = str(l) + ".txt"
-        arch = open(txt, "r").read().lower()
-        arch = arch.replace("á", "a")
-        arch = arch.replace("é", "e")
-        arch = arch.replace("í", "i")
-        arch = arch.replace("ó", "o")
-        arch = arch.replace("ú", "u")
-        arch = arch.replace("ñ", "n")
-        arch = re.sub("[^a-z]", "", arch)
-        adicional.append(arch)
-        commands.getoutput("rm -R " + txt)
+        if l <= auxtotal:
+            commands.getoutput("pdftotext -f " + str(l) + " -l " + str(l) + " " + path + " " + str(l) + ".txt")
+            txt = str(l) + ".txt"
+            arch = open(txt, "r").read().lower()
+            arch = arch.replace("á", "a")
+            arch = arch.replace("é", "e")
+            arch = arch.replace("í", "i")
+            arch = arch.replace("ó", "o")
+            arch = arch.replace("ú", "u")
+            arch = arch.replace("ñ", "n")
+            arch = re.sub("[^a-z]", "", arch)
+            adicional.append(arch)
+            commands.getoutput("rm -R " + txt)
     aux2 = comm.gather(adicional, root=master)
     if rank == master:
         lista2 = []
