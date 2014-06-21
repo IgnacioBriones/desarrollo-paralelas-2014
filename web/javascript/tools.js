@@ -1,11 +1,16 @@
-function changeClass(x, y) {
-	document.getElementById('a_' + x + '_' + y).className = "match";
-}
-// función que dadas las coordenadas del match, cambia el selector de
-// "non_match" a "match"
+function changeClass(match) {
 
-function changeClass(sheetId, i, j) {
-	$('#letra_' + sheetId + '_' + i + '_' + j).className = "letra match";
+	for ( var m in match) {
+		for ( var p in match[m].position) {
+			for ( var l in match[m].position[p]) {
+				var i = match[m].page;
+				var j = match[m].position[p][l][0];
+				var k = match[m].position[p][l][1];
+				$('#letra_' + i + '_' + j + '_' + k).addClass('match').removeClass('non_match');
+
+			}
+		}
+	}
 
 }
 
@@ -38,8 +43,8 @@ function book(nfilas) {
 var fila = function(sheetId, i) {
 	var columnas = '';
 	for ( var j = 0; j < 60; j++) {
-		columnas += '<div class = "letra" id = "letra_' + sheetId + '_' + i
-				+ '_' + j + '">' + '</div>';
+		columnas += '<div class = "letra non_match" id = "letra_' + sheetId
+				+ '_' + i + '_' + j + '">' + '</div>';
 	}
 	return columnas;
 };

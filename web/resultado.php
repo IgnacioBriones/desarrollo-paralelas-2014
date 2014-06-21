@@ -59,6 +59,7 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 					$("#ajax_loading").hide();
 					alert(data);
 					$('#Resultado').html(book(info.nhojas));
+					
 					for(var i=0; i<info.sheets.length ;i++){
 						for(var j=0; j<info.sheets[i].length; j++){
 							for(var k=0; k<60 ; k++){
@@ -66,16 +67,8 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 							}
 						}
 					}
-					
-					for(m in info.match){
-						for(p in m.position){
-							for(l in p){
-								for(c in l){
-									changeClass(c[0],c[1]);
-								}
-							}
-						}
-					}
+
+					changeClass(info.match);
 		},
 		});
 	});
