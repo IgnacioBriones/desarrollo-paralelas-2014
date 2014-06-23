@@ -18,7 +18,7 @@ $kill = shell_exec("sudo -u cluster pkill mpiexec");
 			else
 			{
 				//Secuencial Implicito
-				$consulta_secuencial_implicita = "python ./../shellSerialImplicit.py"."  "."./../web/subidas/".$nombre;
+				$consulta_secuencial_implicita = "python ".$absPath."/../shellSerialImplicit.py"."  ".$absPath."/subidas/".$nombre;
 				$salida = shell_exec($consulta_secuencial_implicita);
 				//echo $consulta_secuencial_implicita;
 				echo $salida;
@@ -37,7 +37,7 @@ $kill = shell_exec("sudo -u cluster pkill mpiexec");
 			else
 			{
 				//Paralelo Implicito
-				$consulta_paralela_implicita = "sudo -u cluster mpiexec "."-n ".$_POST['NumeroProcesadores']." --hostfile ./../hostfile"."  "."python ./../shellParallelImplicit.py"." "."./..//web/subidas/".$nombre;
+				$consulta_paralela_implicita = "sudo -u cluster mpiexec "."-n ".$_POST['NumeroProcesadores']." --hostfile ./../hostfile"."  "."python ./../shellParallelImplicit.py"." "."./../web/subidas/".$nombre;
 				$salida = shell_exec($consulta_paralela_implicita);	
 				//echo $consulta_paralela_implicita;
 				echo $salida;

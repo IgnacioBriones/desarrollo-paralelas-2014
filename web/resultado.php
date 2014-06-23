@@ -68,7 +68,7 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 					for(var i=0; i<info.sheets.length ;i++){
 						for(var j=0; j<info.sheets[i].length; j++){
 							for(var k=0; k<60 ; k++){
-								$('#letra_'+i+'_'+j+'_'+k).html(info.sheets[i][j][k]);
+								$('#letra_'+i+'_'+j+'_'+k).html(info.sheets[i][j][k].toUpperCase());
 							}
 						}
 					}
@@ -79,7 +79,10 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 					// agrega las gráficas de desempeño en la parte inferior de las hojas
 					
 					addPlot(info);
+					
 					addScatter(info);
+					
+					addPerformance(info);
 					
 					
 					$(".libro").owlCarousel({
@@ -90,7 +93,8 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 					        paginationNumbers: true,
 					        scrollPerPage: false,
 					        autoHeight: true,
-					        navigation: true
+					        navigation: true,
+					        items: 5,
      				 	});
 		},
 		});
@@ -102,7 +106,7 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
     <div class="title">
       <h1>Computación Paralela</h1>
       <br /> 
-      <h3>Proyecto final: "El código secreto de La Biblia"</h3>
+      <h3>Pattern Search Engine</h3>
     </div>
   </div>
   <div id="main">
@@ -117,6 +121,8 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 <div id="performance"> </div>
 
 <div id="scatter"> </div>
+
+<div id="tiempo_rank"></div>
 </div>
     <div class="leftmenu">
       <div class="nav">
@@ -124,6 +130,7 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
            <li><a href="index.html">Inicio</a></li>
            <li><a href="curso.php">Curso</a></li>
            <li><a href="herramientas.php">Herramientas</a></li>
+	   <li><a href="#" onclick="kill()">PKill</a></li>
         </ul>
       </div>
     </div>
