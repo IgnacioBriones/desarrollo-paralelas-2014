@@ -107,7 +107,7 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
   <div id="main">
     <div class="center">
 
-<h1>Resultado</h1>
+<h1 id="titulo-res">Resultado</h1>
 <img src="./images/ajax.gif" id="ajax_loading" width="100" />
 <div id="Resultado">
 
