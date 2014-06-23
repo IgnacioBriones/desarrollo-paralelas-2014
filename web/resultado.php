@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>	
-<title>Computaci&oacute;n Paralela</title>
+<title>Computación Paralela</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 
 <link href="owl.carousel.css" rel="stylesheet" type="text/css" />
@@ -14,6 +14,9 @@
 <script src="./javascript/tools.js"></script>
 <script src="./javascript/owl.carousel.js"></script>
 
+<!-- para los graficos -->
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
 
 </head>
 <?php
@@ -33,9 +36,6 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 		$absPath = realpath(dirname(__FILE__));
 		move_uploaded_file($nombre_tmp, $absPath."/subidas/".$nombre);    
 }
-
-
-
 ?>
 
 <script language="javascript">
@@ -73,7 +73,13 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 						}
 					}
 
+					// cambia las clases
 					changeClass(info.match);
+
+					// agrega las gráficas de desempeño en la parte inferior de las hojas
+					
+					addPlot();
+					
 					
 					$(".libro").owlCarousel({
 					        stopOnHover : true,
@@ -93,7 +99,7 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 <div class="content">
   <div id="header">
     <div class="title">
-      <h1>Computaci&oacute;n Paralela</h1>
+      <h1>Computación Paralela</h1>
       <br /> 
       <h3>Proyecto final: "El código secreto de La Biblia"</h3>
     </div>
@@ -104,6 +110,10 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 <h1>Resultado</h1>
 <img src="./images/ajax.gif" id="ajax_loading" width="100" />
 <div id="Resultado">
+
+</div>
+
+<div id="performance">
 
 </div>
 </div>
@@ -121,7 +131,7 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 <div id="prefooter"></div>
 
 <div id="footer">
-    <div class="padding"> Copyright Curso Computaci&oacute;n Paralela 2014 / Primer Semestre, UTEM  </div>
+    <div class="padding"> Copyright Curso Computación Paralela 2014 / Primer Semestre, UTEM  </div>
 </div>
 
 </div>

@@ -14,33 +14,23 @@ import os
 import commands
 import json
 import sys
-
+from tools import removeInvalidChar
 
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 master = 0
 
-
-
 path, words = (sys.argv[1], sys.argv[2])
-words = words.replace("Á","a")
-words = words.replace("É","e")
-words = words.replace("Í","i")
-words = words.replace("Ó","o")
-words = words.replace("Ú","u")
-words = words.replace("á","a")
-words = words.replace("é","e")
-words = words.replace("í","i")
-words = words.replace("ó","o")
-words = words.replace("ú","u")
+words = removeInvalidChar(words)
 words = words.lower().split()
 words = words + [w[::-1] for w in words]
 ncol = 60
 sheets = parallelpdf2string(comm=comm, path=path)
 
-match = [[{'word':word, 'page':page, 'jump':rank + 1, 'position':get_pattern(text=sheet, rank=rank, word=word)}
-          for page, sheet in enumerate(sheets)] for word in words ]
+match = [[[{'word':word, 'page':page, 'jump':r + 1, 'position':get_pattern(text=sheet, rank=rank, word=word)}
+          for page, sheet in enumerate(sheets)] for word in words ]for r in range(rank*10,(rank+1)*100)]
 
+match = sum(match, [])
 match = sum(match, [])
 match = comm.gather(match, root=master)
 

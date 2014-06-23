@@ -14,19 +14,17 @@ import sys
 path = sys.argv[1]
 words = lista_diccionario()
 words = words + [w[::-1] for w in words]
+
 ncol=60
 
 sheets = pdf2string(path=path)
 
 
 match = [[[{'word':word, 'page':page, 'jump':rank + 1, 'position':get_pattern(text=sheet, rank=rank, word=word)}
-      for page, sheet in enumerate(sheets)] for word in words ] for rank in range(10)]
+      for page, sheet in enumerate(sheets)] for word in words ] for rank in range(100)]
 match = sum(match, [])
-match = sum(match, [])
-match = [m for m in match if m['position'] != []]
 
-for m in match:
-    m['position'] = list(m['position'])
+match = clearMatch(match)
     
 sheets = [str2matrix(text=sheet, ncol=ncol) for sheet in sheets]
 nhojas = [len(s) for s in sheets]

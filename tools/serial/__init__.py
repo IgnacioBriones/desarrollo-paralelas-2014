@@ -18,6 +18,7 @@ from coordenadas import misma_recta
 
 
 def get_pattern(text, rank, word):
+    t0 = time.time()
     """toma un texto y un rank (que dice cuantos espacios se van a av"""
     # pasarlo a un array
     text = np.array(list(text))
@@ -48,8 +49,9 @@ def get_pattern(text, rank, word):
     if match != []:
         # si la lista no esta vacia tiene que tener elementos sobre la misma recta
         match = [m for m in match if misma_recta(m)]
-
-    return match
+    
+    t1 = time.time()
+    return t1-t0, match
 
      
 def clearMatch(match):
@@ -58,5 +60,8 @@ def clearMatch(match):
     match = [m for m in match if m['position'] != []]
 
     for m in match:
-        m['position'] = list(m['position'])
+        m['time'] = m['position'][0]
+        m['position'] = list(m['position'][1])
+        m['n'] = len(m['position'])
+        m['word_lengh'] = len(m['word'])
     return match
