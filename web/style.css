@@ -292,7 +292,6 @@ li a:hover {
 	margin: 0px;
 	border: 1px solid #888888;
 	background-color: white;
-	opacity: 0.5;
 }
 
 .fila {
@@ -310,6 +309,7 @@ li a:hover {
 	height: auto;
 	text-align: center;
 	font-family: "Times New Roman";
+	font-weight: bold;
 	/*font-style: italic;*/
 	font-size: 9.63px;
 }
