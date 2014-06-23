@@ -51,17 +51,20 @@ def get_pattern(text, rank, word):
         match = [m for m in match if misma_recta(m)]
     
     t1 = time.time()
+    
     return t1-t0, match
 
      
 def clearMatch(match):
     """elimina elementos repetidos y agrega informacion adicional"""
     match = sum(match, [])
-    match = [m for m in match if m['position'] != []]
+    
 
     for m in match:
         m['time'] = m['position'][0]
         m['position'] = list(m['position'][1])
         m['n'] = len(m['position'])
         m['word_lengh'] = len(m['word'])
+        
+    match = [m for m in match if m['position'] != []]
     return match

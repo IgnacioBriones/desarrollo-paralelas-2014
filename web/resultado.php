@@ -78,7 +78,7 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 
 					// agrega las gráficas de desempeño en la parte inferior de las hojas
 					
-					addPlot();
+					addPlot(info);
 					
 					
 					$(".libro").owlCarousel({

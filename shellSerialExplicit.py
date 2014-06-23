@@ -29,6 +29,10 @@ match = clearMatch(match)
 
 sheets = [str2matrix(text=sheet, ncol=ncol) for sheet in sheets]
 nhojas = [len(s) for s in sheets]
-bible = {'sheets':sheets, 'match':match, 'nhojas':nhojas, 'ncol':ncol}
+
+#creamos un diccionario con todas las series
+series = [{'name':w, 'data':[len([m for m in match if m['word']==w])]} for w in words]
+
+bible = {'sheets':sheets, 'match':match, 'nhojas':nhojas, 'words':words, 'series':series}
 print json.dumps(bible)   
 # print match
