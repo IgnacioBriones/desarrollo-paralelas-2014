@@ -79,6 +79,7 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 					// agrega las gráficas de desempeño en la parte inferior de las hojas
 					
 					addPlot(info);
+					addScatter(info);
 					
 					
 					$(".libro").owlCarousel({
@@ -113,9 +114,9 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 
 </div>
 
-<div id="performance">
+<div id="performance"> </div>
 
-</div>
+<div id="scatter"> </div>
 </div>
     <div class="leftmenu">
       <div class="nav">

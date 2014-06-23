@@ -33,6 +33,10 @@ nhojas = [len(s) for s in sheets]
 #creamos un diccionario con todas las series
 series = [{'name':w, 'data':[len([m for m in match if m['word']==w])]} for w in words]
 
-bible = {'sheets':sheets, 'match':match, 'nhojas':nhojas, 'words':words, 'series':series}
+#buscamos todos los pares ordenados entre tiempo y largo de la palabra
+
+scatter = [(s['word_lengh'], s['time']) for s in match]
+
+bible = {'sheets':sheets, 'match':match, 'nhojas':nhojas, 'words':words, 'series':series, 'scatter':scatter}
 print json.dumps(bible)   
 # print match
