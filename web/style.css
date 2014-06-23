@@ -47,9 +47,13 @@ body {
 	width: 550px;
 	height: 200px
 }
+#titulo-res{
+	padding-left: 10px;
+}
+
 #Resultado {
 	padding-top: 15px;
-	width: 550px;
+	width: 580px;
 	height: auto;
 }
 #header .title {
@@ -280,29 +284,34 @@ li a:hover {
 .libro {
 	margin: 0;
 	padding: 0;
+	position: absolute;
 }
 
 .hoja {
-	margin: 2px;
-	height: auto;
+	padding: 0;
+	margin: 0px;
+	border: 1px solid #888888;
+	background-color: white;
+	opacity: 0.5;
 }
 
 .fila {
-	display: inline-block;
+	text-align: center;
+	display: inline-flex;
 	width: 100%;
 	height: auto;
 	clear: both;
 }
 
 .letra {
-	display: 1px solid black;
+	display: inline-block;
 	float: left;
-	width: 9px;
+	width: 9.63px;
+	height: auto;
 	text-align: center;
 	font-family: "Times New Roman";
-	font-style: italic;
-	font-size: 10px;
-	border-radius: 10px;
+	/*font-style: italic;*/
+	font-size: 9.63px;
 }
 
 .match {
