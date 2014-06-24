@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+import numpy as np
+
 def misma_recta(var):
     es_igual = True   
     if len(var) <= 1:
@@ -31,3 +33,6 @@ def misma_recta(var):
                     es_igual = False
                     break
             return es_igual
+        
+def misma_recta_2(coor):
+    c = np.array(coor)

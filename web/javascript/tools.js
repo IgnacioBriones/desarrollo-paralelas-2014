@@ -175,7 +175,7 @@ function addPerformance(info){
 	        xAxis: {
 	            title: {
 	                enabled: true,
-	                text: 'largo de la palabra'
+	                text: 'espacio entre letras asociada a la cantidad de procesadores'
 	            },
 	            startOnTick: true,
 	            endOnTick: true,
@@ -183,7 +183,7 @@ function addPerformance(info){
 	        },
 	        yAxis: {
 	            title: {
-	                text: 'tiempo (s)'
+	                text: 'tiempo promedio (s)'
 	            }
 	        },
 	        legend: {
