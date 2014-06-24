@@ -35,23 +35,5 @@ match = sum(match, [])
 match = comm.gather(match, root=master)
 
 if rank == master:
-    match = clearMatch(match)
-
-    sheets = [str2matrix(text=sheet, ncol=ncol) for sheet in sheets]
-    nhojas = [len(s) for s in sheets]    
-    # creamos un diccionario con todas las series
-    series = [{'name':w, 'data':[len([m for m in match if m['word'] == w])]} for w in words]
-    
-    # buscamos todos los pares ordenados entre tiempo y largo de la palabra
-    
-    scatter = [(s['word_lengh'], s['time']) for s in match]
-    performance = [(s['jump'], s['time']) for s in match]
-
-    bible = {'sheets':sheets,
-             'match':match,
-             'nhojas':nhojas,
-             'words':words,
-             'series':series,
-             'scatter':scatter,
-             'performance':performance}
+    bible = clearMatch(match, sheets,ncol,words)
     print json.dumps(bible)
