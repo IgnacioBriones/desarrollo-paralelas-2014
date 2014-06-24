@@ -15,7 +15,7 @@ def misma_recta(var):
         y1 = p1[0]        
         try:
             # Pendiente Finita
-            pendiente = (y1 - y0)/(x1 - x0)
+            pendiente = float(y1 - y0)/(x1 - x0)
             for i in range(2,len(var)):
                 pendiente2 = float(var[i][0] - y0) / (var[i][1] - x0)
                 if pendiente == pendiente2:

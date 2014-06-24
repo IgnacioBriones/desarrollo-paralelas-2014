@@ -28,8 +28,8 @@ ncol = 60
 sheets = parallelpdf2string(comm=comm, path=path)
 
 
-match = [[[{'word':word, 'page':page, 'jump':r + 1, 'position':get_pattern(text=sheet, rank=rank, word=word)}
-          for page, sheet in enumerate(sheets)] for word in words ]for r in range(rank*10,(rank+1)*100)]
+match = [[[{'word':word, 'page':page, 'jump':r + 1, 'position':get_pattern(text=sheet, rank=r, word=word)}
+          for page, sheet in enumerate(sheets)] for word in words ]for r in range(rank*100,(rank+1)*100)]
 
 match = sum(match, [])
 match = sum(match, [])
