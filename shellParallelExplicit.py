@@ -19,17 +19,15 @@ from tools import removeInvalidChar
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 master = 0
-
+size = comm.size
 path, words = (sys.argv[1], sys.argv[2])
 words = removeInvalidChar(words)
 words = words.lower().split()
 words = words + [w[::-1] for w in words]
 ncol = 60
 sheets = parallelpdf2string(comm=comm, path=path)
-
-match = [[[{'word':word, 'page':page, 'jump':r + 1, 'position':get_pattern(text=sheet, rank=r, word=word)}
-          for page, sheet in enumerate(sheets)] for word in words ]for r in range(rank * 100, (rank + 1) * 100)]
-
+match = [[[{'word':w, 'page':page, 'jump':r + 1, 'position':get_pattern(text=sheet, rank=r, word=w)}
+           for r in range(rank * len(sheet)/(size*len(w)), (rank + 1) * len(sheet)/(size*len(w)))] for w in words ] for page, sheet in enumerate(sheets)]
 match = sum(match, [])
 match = sum(match, [])
 match = comm.gather(match, root=master)

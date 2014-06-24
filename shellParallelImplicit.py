@@ -24,12 +24,12 @@ path = sys.argv[1]
 words = lista_diccionario()
 words = words + [w[::-1] for w in words]
 ncol = 60
-
+size = comm.size
 sheets = parallelpdf2string(comm=comm, path=path)
 
-
-match = [[[{'word':word, 'page':page, 'jump':r + 1, 'position':get_pattern(text=sheet, rank=r, word=word)}
-          for page, sheet in enumerate(sheets)] for word in words ]for r in range(rank*100,(rank+1)*100)]
+sheets = parallelpdf2string(comm=comm, path=path)
+match = [[[{'word':w, 'page':page, 'jump':r + 1, 'position':get_pattern(text=sheet, rank=r, word=w)}
+           for r in range(rank * len(sheet)/(size*len(w)), (rank + 1) * len(sheet)/(size*len(w)))] for w in words ] for page, sheet in enumerate(sheets)]
 
 match = sum(match, [])
 match = sum(match, [])

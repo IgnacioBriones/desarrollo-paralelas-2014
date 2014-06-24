@@ -30,7 +30,6 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 		$tamano = $_FILES['archivo']['size'];
 		
 		$nombre = str_replace(" ", "_", $nombre);
-		$nombre = time()."_".$nombre;
 		
 		//cargando archivo
 		$absPath = realpath(dirname(__FILE__));
