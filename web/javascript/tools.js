@@ -14,6 +14,28 @@ function changeClass(match) {
 
 }
 
+function drawTable(m){
+	if(m.length == 0){
+		tabla = '<tr class="tr-principal"><th class="th-principal">No se encontraron resultados</th></tr>';
+	}
+	else{
+		tabla = '<tr class="tr-principal"><th class="th-principal">Palabra</th><th class="th-principal">Página</th><th class="th-principal">Posición(x,y)</th><th class="th-principal">Salto</th></tr>';
+		for(i=0; i<m.length; i++){
+			tabla = tabla + '<tr class="tr-principal"><td class="td-principal">'+m[i].word+'</td>';
+			tabla = tabla + '<td class="td-principal">'+(m[i].page + 1)+'</td><td class="td-principal"><table class="tabla-sec">';
+			for(j=0; j<m[i].position.length; j++){
+				tabla = tabla + '<tr><th class="th-sec">'+(j+1)+'</th>';
+				for(k=0; k<m[i].position[j].length; k++){
+					tabla = tabla + '</td><td class="td-sec">('+m[i].position[j][k]+')</td>';
+				}
+				tabla = tabla + '</tr>';
+			}
+			tabla = tabla + '</table></td><td class="td-principal">'+m[i].jump+'</td></tr>';
+		}
+	}
+	return '<table class="tabla-principal">'+tabla+'</table>';
+}
+
 var Sheet = function(sheetId, nfilas) {
 	var html = '';
 	var pagina = '';

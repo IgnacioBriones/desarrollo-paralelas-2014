@@ -15,7 +15,7 @@
     <div class="title">
       <h1>Computaci&oacute;n Paralela</h1>
       <br /> 
-      <h3>Pattern Search Engine</h3>
+      <h3>PSE (Pattern Search Engine)</h3>
     </div>
   </div>
   <div id="main">

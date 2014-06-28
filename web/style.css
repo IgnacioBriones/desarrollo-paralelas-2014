@@ -322,3 +322,50 @@ li a:hover {
 .non_match {
 	color: black;
 }
+/*-------------------tabla----------------------*/
+.tabla-principal{
+	border-collapse: collapse;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 15px;
+	background-color: #FFFFFF;
+}
+.th-principal,.td-principal{
+	padding-top: 7px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 7px;
+	border: 1px solid #0F5B7F;
+}
+
+.th-principal{
+	color: #FFFFFF;
+	background-color: #0F5B7F;
+}
+
+.td-principal{
+	color: #000000;
+}
+
+.tabla-sec{
+	border-collapse: collapse;
+}
+
+.th-sec{
+	color: #FFFFFF;
+	background-color: #0F5B7F;
+	border: 1px solid #0F5B7F;
+}
+
+.td-sec{
+	border: 1px solid #0F5B7F;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+
+
+
+

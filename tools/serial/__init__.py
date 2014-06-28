@@ -18,55 +18,59 @@ from coordenadas import misma_recta
 from tools.stringamatriz import str2matrix
 from numpy import mean
 
-def get_pattern(text, rank, word):
+def get_pattern(text, rank, regex):
     t0 = time.time()
     """toma un texto y un rank (que dice cuantos espacios se van a av"""
     # pasarlo a un array
     text = np.array(list(text))
     # buscamos la palabra casa
-    p = re.compile(word)
     
     match = set()
     for i in range(rank + 1):
         textRank = text[np.arange(i, len(text), rank + 1)]
         textRank = "".join(textRank.tolist())
-        m = [((rank + 1) * m.start(0) + i, (rank + 1) * (m.end(0) - 1) + i) for m in re.finditer(p, textRank)]
+        m = [((rank + 1) * m.start(0) + i, (rank + 1) * (m.end(0) - 1) + i, m.group()) for m in re.finditer(regex, textRank)]
         m = set(m)
         # hacer la correccion del rank
          
         match = match | m
     # buscamos las coincidencias de la palabra word dentro de este string
     
-    # buscamos las posiciones especificas de cada una de las letras
+    
     match = list(match)
     try:
-        match = [range(m[0], m[1] + 1, rank + 1) for m in match]
+        # buscamos las posiciones especificas de cada una de las letras
+        match = [(range(m[0], m[1] + 1, rank + 1), m[2]) for m in match]
     except :
         pass
     
     # convertir todos los elementos de las listas a tuplas
-    match = [[ordered_pair(n) for n in m] for m in match]     
+    match = [([ordered_pair(n) for n in m[0]], m[1]) for m in match]     
     # eliminar todos los conjuntos de tuplas que no esten sobre la misma recta
-    if match != []:
-        # si la lista no esta vacia tiene que tener elementos sobre la misma recta
-        match = [m for m in match if misma_recta(m)]
+#     if match != []:
+#         # si la lista no esta vacia tiene que tener elementos sobre la misma recta
+#         match = [m for m in match if misma_recta(m)]
     
     t1 = time.time()
     
-    return t1-t0, match
+    try:
+        tiempo_repartido = (t1 - t0) / len(match)
+    except:
+        tiempo_repartido = 0
+        
+    match = [(m[1], m[0], tiempo_repartido) for m in match]
+    return match
 
      
-def clearMatch(match,sheets,ncol,words):
+def clearMatch(match, sheets, ncol, words):
     """elimina elementos repetidos y agrega informacion adicional"""
     match = sum(match, [])
     
 
     for m in match:
-        m['time'] = m['position'][0]
-        m['position'] = list(m['position'][1])
-        m['n'] = len(m['position'])
         m['word_lengh'] = len(m['word'])
-        
+
+
     match = [m for m in match if m['position'] != []]
     
     sheets = [str2matrix(text=sheet, ncol=ncol) for sheet in sheets]
@@ -81,15 +85,13 @@ def clearMatch(match,sheets,ncol,words):
     # luego de calcular el desempeño, dividimos por la cantidad de palabras encontradas antes de ese salto
     performance = [(s['jump'], s['time']) for s in match]
     
-    #buscamos el tiempo promedio por cada rank
-    performance = [(q[0],mean([p[1] for p in performance if p[0]==q[0]]))for q in performance]
-    #performance = [(p[0],p[1]/len([q for q in performance if q[0]<=p[0]])) for p in performance]
+    # buscamos el tiempo promedio por cada rank
+    performance = [(q[0], mean([p[1] for p in performance if p[0] == q[0]]))for q in performance]
+    performance = [(p[0], p[1] / len([q for q in performance if q[0] <= p[0]])) for p in performance]
     
-    bible = {'sheets':sheets,
+    info = {
              'match':match,
              'nhojas':nhojas,
              'words':words,
-             'series':series,
-             'scatter':scatter,
-             'performance':performance}
-    return bible
+             }
+    return info

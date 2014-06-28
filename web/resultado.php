@@ -18,6 +18,9 @@
 <script src="http://code.highcharts.com/highcharts.js"></script>
 <script src="http://code.highcharts.com/modules/exporting.js"></script>
 
+
+
+
 </head>
 <?php
 
@@ -61,7 +64,9 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 		success: function(data){
 					info = jQuery.parseJSON(data);
 					$("#ajax_loading").hide();
-
+					$('#Resultado').html(drawTable(info.match));
+					
+					/*
 					$('#Resultado').html(book(info.nhojas));
 					
 					for(var i=0; i<info.sheets.length ;i++){
@@ -76,14 +81,14 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 					changeClass(info.match);
 
 					// agrega las gráficas de desempeño en la parte inferior de las hojas
-					
+					*/
 					addPlot(info);
 					
 					addScatter(info);
 					
 					addPerformance(info);
 					
-					
+					/*
 					$(".libro").owlCarousel({
 					        stopOnHover : true,
 					        singleItem : true,
@@ -95,9 +100,12 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
 					        navigation: true,
 					        items: 5,
      				 	});
+     				 	*/
 		},
 		});
 	});
+	
+
 </script>
 <body>
 <div class="content">
@@ -105,7 +113,7 @@ if (isset($_FILES['archivo']) && !empty($_FILES['archivo']['name']) && !empty($_
     <div class="title">
       <h1>Computación Paralela</h1>
       <br /> 
-      <h3>Pattern Search Engine</h3>
+      <h3>PSE (Pattern Search Engine)</h3>
     </div>
   </div>
   <div id="main">
